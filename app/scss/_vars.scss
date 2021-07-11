@@ -2,6 +2,32 @@ $accent: #DD4242;
 $white: #fff;
 $default: #A9AFC3;
 
+%mulish-400{
+  font-family: 'Mulish-Regular', sans-serif;
+  font-weight: 400;
+}
+%mulish-700{
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+}
+
+%poppins-300{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+%poppins-400{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+%poppins-500{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+%poppins-700{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
 %btn{
   border: 2px solid $accent;
   border-radius: 50px;
@@ -11,6 +37,7 @@ $default: #A9AFC3;
   background-color: transparent;
   color: #fff;
   cursor: pointer;
+  @extend %mulish-400;
   transition: all .3s linear;
   overflow: hidden;
   position: relative;

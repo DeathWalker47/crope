@@ -27,9 +27,12 @@
     font-size: 20px;
     line-height: 30px;
     margin-right: 63px;
+    @extend %mulish-400;
+
   }
   &__btn{
     @extend %btn;
+
   }
 }
 
@@ -44,6 +47,7 @@
     font-size: 18px;
     line-height: 27px;
     transition: all .3s linear;
+    @extend %mulish-700;
     &:hover{
       color: $accent;
     }
@@ -55,7 +59,7 @@
 
 
 .top{
-  background-color: #111319;
+  background-color: #0D0F0F;
   height: 100vh;
   &__container{
     position: relative;
@@ -74,12 +78,14 @@
     font-size: 120px;
     line-height: 120px;
     margin-bottom: 50px;
+    @extend %poppins-700;
   }
   &__text{
     font-size: 22px;
     line-height: 33px;
     margin-bottom: 83px;
-    max-width: 580px;
+    max-width: 540px;
+    @extend %poppins-300;
   }
   &__btn{
     display: flex;
@@ -97,6 +103,7 @@
     font-size: 16px;
     line-height: 24px;
     color: $white;
+    @extend %poppins-400;
     position: relative;
     &::before{
       content: '';
@@ -113,6 +120,7 @@
     font-size: 16px;
     line-height: 27px;
     color: $accent;
+    @extend %mulish-400;
   }
 }
 
@@ -181,6 +189,7 @@
   text-transform: uppercase;
   padding-bottom: 12px;
   border-bottom: 1px solid $white;
+  @extend %poppins-400;
   transition: all .3s linear;
   &:hover{
     color: $accent;
@@ -192,7 +201,7 @@
 .slick-prev{
   width: 80px;
   right: 170px;
-  z-index: 4;
+  z-index: 3;
   text-align-last: left;
 }
 .slick-next{
@@ -201,5 +210,64 @@
   text-align: right;
 }
 
+.about{
+  /* background-image: url('../images/two-bg.jpg'); */
+  background-repeat: no-repeat;
+  /* background-size: 50%; */
+  background-color: #12141C;
+ /*  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 50%;
+    bottom: 0;
+    background: linear-gradient(270.48deg, #12141C 0.45%, rgba(8, 10, 16, 0) 83.36%);
+  } */
+  
+  &__inner{
+    display: flex;
+  }
+  &__img-box{
+    margin-right: 25px;
+    max-width: 950px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(270.48deg, #12141C 0.45%, rgba(8, 10, 16, 0) 83.36%);
+    }
+  }
+  &__img{
+    max-width: 950px;
+    max-height: 1024px;
+    object-fit: cover;
+  }
+  &__content{
+    max-width: 530px;
+    padding-top: 224px;
+    padding-bottom: 40px;
+    /* margin-left: auto; */
+  }
+  &__subtitle{
+    margin-bottom: 21px;
+  }
+  &__title{
+    margin-bottom: 40px;
+  }
+  &__descr{
+    margin-bottom: 32px;
+    font-size: 22px;
+    line-height: 33px;
+    @extend %poppins-300;
+  }
+  &__text{
+    margin-bottom: 60px;
+  }
+}
 
 @import 'media';

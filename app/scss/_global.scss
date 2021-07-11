@@ -2,6 +2,21 @@ body{
   font-size: 18px;
   line-height: 31px;
   color: $default;
+  @extend %mulish-400;
+}
+
+.page-section{
+  /* height: 100vh; */
+  position: relative;
+}
+
+.number{
+  position: absolute;
+  top: 130px;
+  right: 65px;
+  font-size: 100px;
+  @extend %mulish-700;
+  color: rgba($color: #fff, $alpha: .05);
 }
 
 .container{
@@ -17,6 +32,7 @@ body{
   letter-spacing: 0.08em;
   position: relative;
   padding-left: 85px;
+  @extend %poppins-400;
   &::before{
     content: '';
     position: absolute;
@@ -37,7 +53,7 @@ body{
   &::after{
     content: '';
     position: absolute;
-    right: 34%;
+    right: 24%;
     bottom: 15px;
     width: 20px;
     height: 20px;
@@ -71,5 +87,37 @@ body{
     transform: translate(-50%, -50%);
     filter: blur(5px);
     border-radius: 50%;
+  }
+}
+
+.read-more{
+  font-size: 16px;
+  line-height: 24px;
+  @extend %poppins-400;
+  text-transform: uppercase;
+  padding-bottom: 12px;
+  padding-right: 25px;
+  color: $accent;
+  border-bottom: 1px solid $accent;
+  transition: all .3s linear;
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 11px;
+    height: 11px;
+    background-image: url('../images/decor/polygon.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .3s linear;
+  }
+  &:hover{
+    color: #eb1f1f;
+    border-bottom: 1px solid #e40e0e;
+    &::before{
+      right: -10px;
+    }
   }
 }

@@ -1,9 +1,55 @@
 @font-face{
-  font-family: 'NAME', sans-serif;
+  font-family: 'Mulish-Regular', sans-serif;
   font-weight: 400;
   font-style: normal;
-  src: local('DMSans-Regular'),
-        url('../fonts/name.woff2') format('woff2'),
-        url('../fonts/name.woff') format('woff');
+  src: local('Mulish-Regular'),
+        url('../fonts/Mulish-Regular.woff2') format('woff2'),
+        url('../fonts/Mulish-Regular.woff') format('woff');
+        font-display: swap;
+      }
+@font-face{
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-style: normal;
+  src: local('Mulish-Bold'),
+        url('../fonts/Mulish-Bold.woff2') format('woff2'),
+        url('../fonts/Mulish-Bold.woff') format('woff');
+        font-display: swap;
+      }
+@font-face{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  src: local('Poppins-Light'),
+        url('../fonts/Poppins-Light.woff2') format('woff2'),
+        url('../fonts/Poppins-Light.woff') format('woff');
+        font-display: swap;
+      }
+@font-face{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: local('Poppins-Regular'),
+        url('../fonts/Poppins-Regular.woff2') format('woff2'),
+        url('../fonts/Poppins-Regular.woff') format('woff');
+        font-display: swap;
+      }
+@font-face{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  src: local('Poppins-Medium'),
+        url('../fonts/Poppins-Medium.woff2') format('woff2'),
+        url('../fonts/Poppins-Medium.woff') format('woff');
+        font-display: swap;
+      }
+@font-face{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  src: local('Poppins-Bold'),
+        url('../fonts/Poppins-Bold.woff2') format('woff2'),
+        url('../fonts/Poppins-Bold.woff') format('woff');
         font-display: swap;
       }
