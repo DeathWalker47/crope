@@ -13,4 +13,12 @@ $(function(){
     prevArrow: '<button type="button" class="slick-prev">Prev</button>',
   });
 
+  $('.services-slider').slick({
+    infinite: false,
+    speed: 800,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow: '<button type="button" class="slick-prev">Prev</button>',
+  });
+
 });

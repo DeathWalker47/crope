@@ -59,7 +59,7 @@
 
 
 .top{
-  background-color: #0D0F0F;
+  background-color: $bg;
   height: 100vh;
   &__container{
     position: relative;
@@ -79,6 +79,10 @@
     line-height: 120px;
     margin-bottom: 50px;
     @extend %poppins-700;
+  }
+  .title::after{
+    width: 20px;
+    height: 20px;
   }
   &__text{
     font-size: 22px;
@@ -135,8 +139,9 @@
 .top-slider__bg{
   position: relative;
    background-repeat: no-repeat;
-   background-size: contain;
+   background-size: 60%;
    background-position: right ;
+   height: 100vh;
    &::before{
      content: '';
      position: absolute;
@@ -194,7 +199,6 @@
   &:hover{
     color: $accent;
     border-bottom: 1px solid $accent;
-  
   }
 }
 
@@ -259,6 +263,9 @@
   &__title{
     margin-bottom: 40px;
   }
+  .title::after{
+    right: 30%;
+  }
   &__descr{
     margin-bottom: 32px;
     font-size: 22px;
@@ -269,5 +276,114 @@
     margin-bottom: 60px;
   }
 }
+
+.services{
+  background-color: $bg;
+  background-image: url('../images/free-bg.png');
+  background-repeat: no-repeat;
+  background-position: right 10%;
+  background-size: auto;
+  padding: 220px 0 135px;
+  &__content{
+    max-width: 560px;
+  }
+  &__subtitle{
+    margin-bottom: 21px;
+  }
+  &__title{
+    margin-bottom: 40px;
+  }
+  .title::after{
+    right: 1%;
+  }
+  &__text{
+    margin-bottom: 70px;
+  }
+
+  .slick-arrow{
+    position: absolute;
+    right: 414px;
+    top: -106px;
+    bottom: auto;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    color: $white;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+    border-bottom: 1px solid $white;
+    @extend %poppins-400;
+    transition: all .3s linear;
+    &:hover{
+      color: $accent;
+      border-bottom: 1px solid $accent;
+    }
+  }
+  
+  .slick-prev{
+    width: 80px;
+    z-index: 3;
+    right: 514px;
+    text-align-last: left;
+  }
+  .slick-next{
+    width: 80px;
+    text-align: right;
+    margin-left: 40px;
+  } 
+  .slick-disabled{
+    color: rgba($color: #fff, $alpha: .4);
+    border-bottom: 1px solid rgba($color: #fff, $alpha: .4);
+
+  }
+}
+
+.services-slider{
+  padding-left: 367px;
+  &__item{
+    max-width: 380px;
+    padding: 50px 0 140px;
+    text-align: center;
+  }
+  &__circle{
+    background-color: rgba($color: #fff, $alpha: .05);
+    border-radius: 50%;
+    margin-bottom: 36px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+  }
+  &__text{
+    font-size: 20px;
+    line-height: 26px;
+    @extend %poppins-500;
+    max-width: 150px;
+    margin: 0 auto 50px;
+  }
+  .slick-slide{
+    max-width: 380px;
+    &:nth-child(odd){
+      background: linear-gradient(180deg, #191C26 0%, rgba(25, 28, 38, 0) 100%);
+    }
+    &:nth-child(even){
+      background: linear-gradient(180deg, #080A12 0%, rgba(8, 10, 18, 0) 100%);
+      }
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 @import 'media';
