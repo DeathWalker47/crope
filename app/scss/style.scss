@@ -462,12 +462,11 @@
     column-count: 2;
   }
   &__info-item{
-    padding: 50px 20px;
+    padding: 55px 20px;
     text-align: center;
     margin-right: 30px;
     margin-bottom: 30px;
     width: 220px;
-    height: 200px;
     &:nth-child(odd){
       background: linear-gradient(180deg, rgba(25, 28, 38, 0) 0%, #080A12 100%);
     }
@@ -485,12 +484,13 @@
     position: relative;
     font-size: 48px;
     color: $white;
+    display: inline-block;
     @extend %mulish-700;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     &::after{
       content: '';
       position: absolute;
-      top: 7px;
+      top: -4px;
       right: -27px;
       background-image: url('../images/decor/+.png');
       background-repeat: no-repeat;
@@ -560,12 +560,16 @@
   &__title{
     margin-bottom: 40px;
   }
+  .title::after{
+    right: 7%;
+  }
   &__text{
     max-width: 550px;
   }
   &__list{
     display: flex;
     justify-content: flex-end;
+    
   }
   &__item{
     width: 380px;
@@ -573,10 +577,15 @@
     position: relative;
     z-index: 2;
     &:hover{
-      background: linear-gradient(180deg, rgba(8, 10, 18, 0) 0%, #DD4242 100%);
       transform: translateY(-20px);
-      .cases__item-img{
-      background-color: rgba($color: #000, $alpha: .4);
+      .cases__item-link{
+        &::before{
+          background-color: rgba($color: #000, $alpha: .4);
+          z-index: 2;
+        }
+        &::after{
+          background: linear-gradient(rgba(8, 10, 18, 0) 0%, rgba(140, 0, 0, 0.45) 100%);
+        }
       }
       .cases__item-boxlink{
         opacity: 1;
@@ -586,13 +595,35 @@
   &__item-link{
     position: relative;
     z-index: 3;
+    position: relative;
+    display: block;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+      background-color: rgba($color: #000, $alpha: .55);
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+      background: linear-gradient(180deg, rgba(25, 28, 38, 0) 0%, #191C26 100%);
+    }
   }
   &__item-img{
     width: 380px;
     height: 490px;
     object-fit: cover;
     transition: all .3s linear;
-
+    position: relative;
   }
   &__item-boxlink{
     transition: all .3s linear;
@@ -602,14 +633,22 @@
     color: $white;
     max-width: 300px;
     position: absolute;
-    bottom: 25px;
+    bottom: 50px;
     left: 50px;
     display: flex;
     flex-direction: column;
+    z-index: 3;
+    svg{
+      margin-top: 15px;
+    }
+    path{
+    transition: all .3s linear;
+    }
     &:hover{
-      color: $accent;
-      svg path{
-        stroke: $accent;
+      color: $default;
+      svg path
+      {
+        stroke: $default;
       }
     }
   }
