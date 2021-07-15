@@ -444,6 +444,7 @@
   }
   &__btn{
     @extend %btn;
+    z-index: 5;
   }
 }
 
@@ -765,8 +766,153 @@
   }
 }
 
+.newsletter{
+  background-color: $bg-two;
+  background-image: url('../images/nine-bg.png');
+  background-size: auto;
+  background-position: right 0%;
+  background-repeat: no-repeat;
+  z-index: 3;
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 25%;
+    background: linear-gradient(90deg, #12141C 75%, rgba(18, 20, 28, 0) 100%);
+    z-index: -1;
+  }
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 250px 0 200px;
+    z-index: 4;
+  }
+  &__subscribe{
+    max-width: 470px;
+    /* margin-right: 215px; */
+  }
+  &__subtitle{
+    margin-bottom: 20px;
+  }
+  &__title{
+    margin-bottom: 40px;
+    max-width: 360px;
+  }
+  &__text{
+    max-width: 450px;
+    margin-bottom: 70px;
+  }
+  &__form{
+    display: flex;
+  }
+  &__form-input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #3A3F50;
+    color: #3A3F50;
+    margin-right: 70px;
+    width: 320px;
+    display: inline-block;
+    &::placeholder{
+      font-size: inherit;
+      line-height: inherit;
+      color: #3A3F50;
+      font-family: inherit;
+    }
+  }
+  &__form-btn{
+    background-color: transparent;
+    padding: 0;
+    border: none;
+  }
+}
 
+.quote{
+  max-width: 385px;
+  &__top{
+    display: flex;
+    margin-bottom: 60px;
+  }
+  &__avatar-img{
+    min-width: 70px;
+    height: 70px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 50px;
+  }
+  &__name{
+    font-size: 20px;
+    line-height: 29px;
+    color: $white;
+    @extend %poppins-500;
+    margin-bottom: 10px;
+  }
+  &__profession{
+    font-size: 16px;
+    line-height: 27px;
+  }
+}
 
+.blockquote{
+  font-size: 22px;
+  line-height: 33px;
+  @extend %poppins-300;
+  margin-bottom: 50px;
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: -65px;
+    right: -30px;
+    background-image: url('../images/decor/icon-quote.svg');
+  }
+}
+
+.footer{
+  &__inner{
+    padding: 44px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #3A3F50;
+  }
+  &__corp{
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+    margin-top: 20px;
+  }
+  &__subtitle{
+    @extend %mulish-700;
+    color: $white;
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 27px;
+  }
+  &__working{
+    max-width: 180px;
+  }
+  &__address{
+    max-width: 220px;
+    font-style: normal;
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 27px;
+  }
+  &__link{
+    display: block;
+    color: $default;
+    font-size: 16px;
+    line-height: 27px;
+  }
+}
 
 
 
