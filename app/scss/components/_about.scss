@@ -1,0 +1,74 @@
+.about-us{
+  background-color: $bg;
+  background-image: url('../images/about-one.png');
+  background-repeat: no-repeat;
+  background-position: right 90%;
+  background-size: auto;
+  .number{
+    top: 290px;
+  }
+  &__content{
+    padding: 90px 0 120px;
+  }
+  &__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 90px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  
+  &__item-top{
+    max-width: 530px;
+  }
+  &__item-box{
+    max-width: 450px;
+  }
+  &__subtitle{
+    margin-bottom: 20px;
+  }
+  &__title{
+    margin-bottom: 40px;
+  }
+  .title::after{
+    right: 14%;
+  }
+  &__item-title{
+    font-size: 28px;
+    line-height: 36px;
+    @extend %poppins-500;
+    margin-bottom: 30px;
+    color: $white;
+  }
+  &__text{
+    margin-bottom: 30px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__circle-box{
+    width: 450px;
+    display: flex;
+    justify-content: center;
+  }
+  &__circle{
+    text-align: center;
+    border: 1px solid $accent;
+    border-radius: 50%;
+    width: 300px;
+    padding: 85px 10px;
+  }
+  &__num{
+    font-size: 80px;
+    line-height: 80px;
+    display: block;
+    color: $white;
+    margin-bottom: 20px;
+  }
+  &__descr{
+    font-size: 22px;
+    line-height: 29px;
+  }
+}
