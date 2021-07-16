@@ -21,4 +21,12 @@ $(function(){
     prevArrow: '<button type="button" class="slick-prev">Prev</button>',
   });
 
+  $('.slider-team').slick({
+    infinite: true,
+    speed: 900,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow: '<button type="button" class="slick-prev">Prev</button>',
+  });
+
 });

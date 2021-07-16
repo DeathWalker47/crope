@@ -72,3 +72,139 @@
     line-height: 29px;
   }
 }
+
+.team{
+  background-color: $bg-two;
+  padding: 180px 0 180px;
+  
+  &__content{
+    max-width: 490px;
+  }
+  &__subtitle{
+    margin-bottom: 20px;
+  }
+  &__title{
+    margin-bottom: 40px;
+  }
+  .title::after{
+    right: 7%;
+  }
+  &__text{
+    margin-bottom: 70px;
+  }
+  &__list{
+    /* padding-left: 350px; */
+    max-width: 1520px;
+    margin-left: auto;
+  }
+  &__item{
+    max-width: 380px;
+    transition: all .3s linear;
+    position: relative;
+    z-index: 2;
+    &:hover{
+      transform: translateY(-20px);
+      .team__item-link{
+        &::before{
+          background-color: rgba($color: #000, $alpha: .4);
+          z-index: 2;
+        }
+        &::after{
+          background: linear-gradient(rgba(8, 10, 18, 0) 0%, rgba(140, 0, 0, 0.45) 100%);
+        }
+      }
+      .team__item-boxlink{
+        opacity: 1;
+      }
+    }
+  }
+  &__item-link{
+    position: relative;
+    z-index: 3;
+    position: relative;
+    display: block;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+      background-color: rgba($color: #000, $alpha: .55);
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+      background: linear-gradient(180deg, rgba(25, 28, 38, 0) 0%, #191C26 100%);
+    }
+  }
+  &__item-img{
+    width: 380px;
+    height: 490px;
+    object-fit: cover;
+    transition: all .3s linear;
+    position: relative;
+  }
+  &__item-boxlink{
+    transition: all .3s linear;
+    opacity: 0;
+    font-size: 22px;
+    line-height: 27px;
+    color: $white;
+    max-width: 300px;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    span{
+      font-size: 18px;
+      line-height: 31px;
+      color: $default;
+    }
+    svg{
+      margin-top: 15px;
+    }
+    path{
+    transition: all .3s linear;
+    }
+    &:hover{
+      color: $default;
+      span{
+        color: $white;
+      }
+      svg path
+      {
+        stroke: $default;
+      }
+    }
+  }
+  .slick-list{
+    padding-top: 20px;
+  }
+  
+  .slick-current{
+    .team__item{
+      transform: translateY(-20px);
+      .team__item-link{
+        &::before{
+          background-color: rgba($color: #000, $alpha: .4);
+          z-index: 2;
+        }
+        &::after{
+          background: linear-gradient(rgba(8, 10, 18, 0) 0%, rgba(140, 0, 0, 0.45) 100%);
+        }
+      }
+      .team__item-boxlink{
+        opacity: 1;
+      }
+    }
+  }
+}
