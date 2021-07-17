@@ -99,6 +99,7 @@ body{
 }
 
 .btn{
+  display: block;
   position: relative;
   cursor: pointer;
   &::before{

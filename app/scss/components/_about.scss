@@ -208,3 +208,28 @@
     }
   }
 }
+
+.portners{
+  background-color: $bg;
+  padding: 105px 0;
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__list-item{
+    transition: all .3s linear;
+    &:hover{
+      opacity: .3;
+    }
+  }
+}
+
+.video{
+  &__popup{
+  min-height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+}

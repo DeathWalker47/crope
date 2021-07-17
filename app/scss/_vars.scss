@@ -61,3 +61,10 @@ $bg-two:#12141C;
             transition: all .7s cubic-bezier(0.19, 1, 0.22, 1);
   }
 }
+
+@function max($numbers...) {
+@return m#{a}x(#{$numbers});
+}
+@function mix($numbers...) {
+@return m#{i}n(#{$numbers});
+}
