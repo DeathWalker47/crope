@@ -1,6 +1,6 @@
 .about-us{
   background-color: $bg;
-  background-image: url('../images/about-one.png');
+  background-image: url('../../images/about-one.png');
   background-repeat: no-repeat;
   background-position: right 90%;
   background-size: auto;
@@ -8,7 +8,7 @@
     top: 290px;
   }
   &__content{
-    padding: 90px 0 120px;
+    padding: 270px 0 120px;
   }
   &__item{
     display: flex;
@@ -33,7 +33,7 @@
     margin-bottom: 40px;
   }
   .title::after{
-    right: 14%;
+    right: 11%;
   }
   &__item-title{
     font-size: 28px;
@@ -87,7 +87,7 @@
     margin-bottom: 40px;
   }
   .title::after{
-    right: 7%;
+    right: 8%;
   }
   &__text{
     margin-bottom: 70px;

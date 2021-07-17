@@ -1,0 +1,116 @@
+.our-services{
+  background-image: url('../../images/about-one.png');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: right 90%;
+  background-color: $bg;
+  .number{
+    top: 290px;
+  }
+  &__content{
+    padding: 270px 0;
+  }
+  &__content-top{
+    margin-bottom: 70px;
+  }
+  &__subtitle{
+    margin-bottom: 20px;
+  }
+  &__title{
+    margin-bottom: 40px;
+  }
+  .title::after{
+    right: 28%;
+  }
+  &__text{
+    max-width: 540px;
+  }
+  &__content-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.price{
+  background-image: url('../../images/five-bg.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right 35%;
+  background-color: $bg;
+  &__content{
+    padding: 150px 0;
+  }
+  &__top{
+    margin-bottom: 110px;
+  }
+  &__subtitle{
+    margin-bottom: 20px;
+  }
+  &__title{
+    margin-bottom: 40px;
+    max-width: 560px;
+  }
+  .title::after{
+    right: 6%;
+  }
+  &__text{
+    max-width: 550px;
+  }
+}
+
+.price-list{
+  display: flex;
+  &__item{
+    max-width: 380px;
+    width: 100%;
+    transition: all .3s linear;
+    text-align: center;
+    &:hover{
+      transform: translateY(-40px);
+      .price-list__item-top{
+        background-color: $accent;
+      }
+      .price-list__services-box{
+        background: linear-gradient(180deg, #191C26 60%, rgba(25, 28, 38, 0) 100%);
+      }
+    }
+  }
+  &__item-top{
+    background-color: #080A12;
+    color: $white;
+    transition: all .3s linear;
+    padding: 40px 15px 40px;
+  }
+  &__item-rate{
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 25px;
+    @extend %poppins-500;
+  }
+  &__item-number{
+    display: block;
+    font-size: 72px;
+    margin-bottom: 17px;
+    @extend %mulish-700;
+    sup{
+      font-size: 24px;
+    }
+  }
+  &__item-month{
+    display: block;
+  }
+  &__services-box{
+    background: linear-gradient(180deg, #080A12 50%, rgba(8, 10, 18, 0) 100%);
+    transition: all .3s linear;
+    padding: 55px 20px 50px;
+  }
+  &__services{
+    margin-bottom: 22px;
+  }
+  &__link{
+    @extend %btn;
+    display: inline-block;
+    margin-top: 20px;
+  }
+}

@@ -3,6 +3,7 @@ body{
   line-height: 31px;
   color: $default;
   @extend %mulish-400;
+  position: relative;
 }
 
 .page-section{
@@ -22,9 +23,11 @@ body{
 .breadcrumbs{
   display: flex;
   justify-content: flex-end;
-  padding-top: 190px;
   text-align: right;
-  padding-right: 90px;
+  position: absolute;
+  top: 190px;
+  right: 90px;
+  z-index: 3;
   &__list{
     display: flex;
     justify-content: center;
@@ -84,6 +87,7 @@ body{
 .title{
   font-size: 64px;
   line-height: 70px;
+  text-transform: capitalize;
   color: $white;
   position: relative;
   &::after{
