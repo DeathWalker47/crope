@@ -6,6 +6,7 @@
 @import './components/about';
 @import './components/services';
 @import './components/cases';
+@import './components/portfolio';
 
 .header{
   position: absolute;
@@ -265,7 +266,7 @@
     /* margin-left: auto; */
   }
   &__subtitle{
-    margin-bottom: 21px;
+    margin-bottom: 20px;
   }
   &__title{
     margin-bottom: 40px;
@@ -558,11 +559,12 @@
 
 .cases{
   background-color: $bg-two;
-  padding: 180px 0 110px;
+  /* padding: 180px 0 110px; */
   &__inner{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    padding-top: 180px;
     margin-bottom: 70px;
   }
   &__content{
@@ -579,6 +581,9 @@
   }
   &__text{
     max-width: 550px;
+  }
+  ul.cases__list{
+    margin-bottom: 110px;
   }
   &__list{
     display: flex;

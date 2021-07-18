@@ -28,6 +28,18 @@ $(function(){
     slidesToScroll: 1,
     prevArrow: '<button type="button" class="slick-prev">Prev</button>',
   });
+  
+  $('.case-slider').slick({
+    infinite: true,
+    speed: 900,
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    fade: true,
+    cssEase: 'linear',
+    autoplay: true,
+    autoplaySpeed: 5000,
+    prevArrow: '<button type="button" class="slick-prev">Prev</button>',
+  });
 
   var mixer = mixitup('.portfolio__cases');
 });
