@@ -29,4 +29,5 @@ $(function(){
     prevArrow: '<button type="button" class="slick-prev">Prev</button>',
   });
 
+  var mixer = mixitup('.portfolio__cases');
 });

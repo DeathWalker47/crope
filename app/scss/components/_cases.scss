@@ -1,0 +1,60 @@
+.portfolio{
+  background-color: $bg-two;
+  background-image: url('../../images/about-one.png');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: right 55%;
+  .number{
+    top: 290px;
+  }
+  &__top{
+    padding: 270px 0 60px;
+    max-width: 770px;
+  }
+  &__subtitle{
+    margin-bottom: 20px;
+  }
+  &__title{
+    margin-bottom: 40px;
+  }
+  .title::after{
+    right: 19%;
+  }
+  &__text{
+    margin-bottom: 70px;
+    max-width: 550px;
+  }
+  &__link-box{
+    text-align: center;
+  }
+  &__link{
+    color: $white;
+    text-align: center;
+    @extend %btn;
+  }
+  &__filter-btn{
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    padding-bottom: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    @extend %poppins-400;
+    margin-right: 40px;
+    color: $default;
+    border-bottom: 1px solid $default;
+    transition: all .3s linear;
+  }
+  .mixitup-control-active{
+    color: $accent;
+    border-bottom: 1px solid $accent;
+  }
+  &__cases{
+    margin-bottom: 140px;
+  }
+  .cases__list{
+    justify-content: start;
+    margin-bottom: 70px;
+  }
+}
