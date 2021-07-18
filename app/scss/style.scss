@@ -7,6 +7,7 @@
 @import './components/services';
 @import './components/cases';
 @import './components/portfolio';
+@import './components/error-404';
 
 .header{
   position: absolute;
@@ -31,7 +32,10 @@
     line-height: 30px;
     margin-right: 63px;
     @extend %mulish-400;
-
+    transition: all .3s linear;
+    &:hover{
+      color: $accent;
+    }
   }
   &__btn{
     @extend %btn;
