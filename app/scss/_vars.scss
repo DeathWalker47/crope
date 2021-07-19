@@ -43,6 +43,7 @@ $bg-tree:#111319;
   @extend %mulish-400;
   transition: all .3s linear;
   overflow: hidden;
+  z-index: 3;
   position: relative;
   &:after {
     background: #fff;

@@ -8,6 +8,7 @@
 @import './components/cases';
 @import './components/portfolio';
 @import './components/error-404';
+@import './components/blog';
 
 .header{
   position: absolute;
@@ -616,7 +617,6 @@
     }
   }
   &__item-link{
-    position: relative;
     z-index: 3;
     position: relative;
     display: block;

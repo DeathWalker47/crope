@@ -30,6 +30,7 @@
   &__link{
     color: $white;
     text-align: center;
+    display: inline-block;
     @extend %btn;
   }
   &__filter-btn{

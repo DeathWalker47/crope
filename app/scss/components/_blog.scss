@@ -1,0 +1,107 @@
+.blog{
+  background-image: url('../../images/about-one.png');
+  background-color: $bg-tree;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right 40%;
+  .number{
+    top: 290px;
+  }
+  &__inner{
+    padding: 270px 0 140px;
+  }
+  &__top{
+    margin-bottom: 70px;
+  }
+  &__subtitle{
+    margin-bottom: 20px;
+  }
+  &__title{
+    margin-bottom: 40px;
+  }
+  .title::after{
+    right: 34%;
+  }
+  &__text{
+    max-width: 540px;
+  }
+}
+
+.blog-content{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  &__item{
+    width: 555px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+    &:hover{
+      .blog-content__link::before{
+        z-index: 1;
+        background: linear-gradient(rgba(8, 10, 18, 0) 0%, rgba(140, 0, 0, 0.45) 100%);
+      }
+      .news__content{
+        transform: translateY(-40px);
+      }
+      .news__box-link{
+        bottom: 40px;
+      }
+    }
+    &:nth-child(odd){
+      margin-right: 30px;
+    }
+  }
+  &__link{
+    width: 555px;
+    display: block;
+    position: relative;
+    z-index: 3;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+      background: linear-gradient(180deg, rgba(25, 28, 38, 0) 0%, #191C26 100%);
+    }
+  }
+  &__img{
+    width: 555px;
+    height: 500px;
+    object-fit: cover;
+  }
+  .news__content{
+    position: absolute;
+    top: 73%;
+
+    left: 40px;
+    z-index: 3;
+    max-width: 400px;
+    transition: all .3s linear;
+    transition-delay: .1s;
+  }
+  .news__content-link{
+    margin-bottom: 0;
+    &:hover{
+    color: $white
+    }
+  }
+  .news__box-link{
+    position: absolute;
+    bottom: -40px;
+    left: 40px;
+    z-index: 3;
+    transition: all .3s linear;
+    .read-more{
+      color: $white;
+      position: static;
+      border-bottom: none;
+      &::before{
+        display: none;
+      }
+    }
+  }
+}
