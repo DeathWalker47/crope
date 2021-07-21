@@ -181,7 +181,7 @@ body{
   font-size: 14px;
   line-height: 24px;
   @extend %mulish-400;
-  padding: 0px 15px;
+  padding: 5px 15px;
   display: inline-block;
   background-color: $accent;
   color: $white;
@@ -189,4 +189,34 @@ body{
   &:hover{
     background-color: #e22525;
   }
+}
+
+.input{
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #3A3F50;
+  color: #3A3F50;
+  display: inline-block;
+  &::placeholder{
+    font-size: inherit;
+    line-height: inherit;
+    color: #3A3F50;
+    font-family: inherit;
+  }
+}
+
+.textarea{
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #3A3F50;
+  color: #3A3F50;
+  resize: none;
+  display: block;
+  &::placeholder{
+    font-size: inherit;
+    line-height: inherit;
+    color: #3A3F50;
+    font-family: inherit;
+  }
+
 }

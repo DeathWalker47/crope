@@ -41,5 +41,15 @@ $(function(){
     prevArrow: '<button type="button" class="slick-prev">Prev</button>',
   });
 
+  $('.post-slider').slick({
+    infinite: false,
+    speed: 900,
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    fade: true,
+    cssEase: 'linear',
+    prevArrow: '<button type="button" class="slick-prev">Prev</button>',
+  });
+
   var mixer = mixitup('.portfolio__cases');
 });
