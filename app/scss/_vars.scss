@@ -4,7 +4,7 @@ $default: #A9AFC3;
 $bg:#0D0F0F;
 $bg-two:#12141C;
 $bg-tree:#111319;
-
+$bg-block: #090b13;
 %mulish-400{
   font-family: 'Mulish-Regular', sans-serif;
   font-weight: 400;
@@ -62,6 +62,14 @@ $bg-tree:#111319;
     left: 120%;
             transition: all .7s cubic-bezier(0.19, 1, 0.22, 1);
   }
+}
+
+%checkbox-hidden{
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
 }
 
 @function max($numbers...) {

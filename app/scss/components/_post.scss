@@ -26,6 +26,11 @@
     max-width: 830px;
     margin-right: 50px;
   }
+  &__aside{
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .post-slider{
   margin-bottom: 120px;
@@ -61,7 +66,8 @@
   }
   blockquote{
     padding: 60px 60px 45px;
-    background-color: #090b13;
+    background-color: $bg-block
+;
     font-size: 20px;
     line-height: 34px;
     margin: 50px 0;
@@ -93,13 +99,15 @@
   }
   &__tag-link{
     margin-right: 10px;
-    background-color: #090b13;
+    background-color: $bg-block
+;
     &:last-child{
       margin-right: 0;
     }
   }
   .author{
-    background-color: #090b13;
+    background-color: $bg-block
+;
     padding: 50px;
     margin-top: 30px;
     margin-bottom: 60px;
@@ -124,46 +132,49 @@
     &__links{
       display: flex;
     }
-    &__link{
-      font-size: 14px;
-      line-height: 21px;
-      opacity: 0.5;
-      transition: all .3s linear;
-      color: $default;
-      text-transform: uppercase;
-      position: relative;
-      padding: 0 17px;
-      &:first-child{
-        padding-left: 0;
+    
+  }
+}
+.author{
+  &__link{
+    font-size: 14px;
+    line-height: 21px;
+    opacity: 0.5;
+    transition: all .3s linear;
+    color: $default;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0 17px;
+    &:first-child{
+      padding-left: 0;
+    }
+    &:nth-child(2){
+      padding: 0 23px;
+      &::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        background-color: $accent;
+        border-radius: 50%;
+        width: 6px;
+        height: 6px;
       }
-      &:nth-child(2){
-        padding: 0 23px;
-        &::before{
-          content: '';
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          left: 0;
-          background-color: $accent;
-          border-radius: 50%;
-          width: 6px;
-          height: 6px;
-        }
-        &::after{
-          content: '';
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          right: 0;
-          background-color: $accent;
-          border-radius: 50%;
-          width: 6px;
-          height: 6px;
-        }
+      &::after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        background-color: $accent;
+        border-radius: 50%;
+        width: 6px;
+        height: 6px;
       }
-      &:hover{
-        opacity: 1;
-      }
+    }
+    &:hover{
+      opacity: 1;
     }
   }
 }
@@ -294,5 +305,115 @@
   &__btn{
     @extend %btn;
     display: inline-block;
+  }
+}
+
+.aside{
+
+  &__form-search{
+    position: relative;
+    padding: 40px;
+    background-color: $bg-block
+;
+    margin-bottom: 50px;
+  }
+
+.error__form-input {
+  width: 180px;
+}
+.error__form-btn {
+  right: 40px;
+  bottom: 43px;
+  }
+  &__categories{
+    margin-bottom: 50px;
+  }
+  &__newsletter{
+    margin-bottom: 50px;
+  }
+}
+
+.filter-categories{
+  &__title{
+    font-size: 28px;
+    line-height: 36px;
+    @extend %poppins-500;
+    margin-bottom: 30px;
+  }
+  &__label{
+    display: block;
+    border-top: 1px solid #3A3F50;
+    cursor: pointer;
+  }
+  &__img-box{
+    width: 60px;
+    position: relative;
+    margin-right: 30px;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+      background: linear-gradient(180deg, rgba(86, 96, 126, 0) 0%, rgba(20,23,30,0.69) 58.65%, #111319 100%);
+    }
+  }
+  &__img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    display: inline-block;
+    margin-right: 30px;
+  }
+  &__input{
+    @extend %checkbox-hidden;
+    &:checked + .filter-categories__checkbox{
+      background-color: $bg-block;
+    }
+  }
+  &__checkbox{
+    display: flex;
+    align-items: center;
+  }
+  &__descr{
+    color: $white;
+  }
+  &__num{
+    color: $default
+  }
+}
+
+.newsletter-box{
+  padding: 45px 40px;
+  background-color: $bg-block;
+  &__title{
+    color: $white;
+    font-size: 28px;
+    line-height: 36px;
+    @extend %poppins-500;
+    margin-bottom: 30px;
+  }
+  &__form{
+    width: 180px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  &__form-input{
+    width: 180px;
+    display: block;
+  }
+  &__form-btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  .author__link{
+    text-transform: uppercase;
   }
 }
