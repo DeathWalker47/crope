@@ -49,6 +49,18 @@ $(function(){
     fade: true,
     cssEase: 'linear',
     prevArrow: '<button type="button" class="slick-prev">Prev</button>',
+    asNavFor: '.name-post',
+  });
+
+  $('.name-post').slick({
+    infinite: false,
+    speed: 900,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    fade: true,
+    cssEase: 'linear',
+    arrows: false,
+    asNavFor: '.post-slider',
   });
 
   var mixer = mixitup('.portfolio__cases');

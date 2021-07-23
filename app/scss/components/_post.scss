@@ -179,6 +179,16 @@
   }
 }
 
+
+.name-post{
+  &__item{
+    font-size: 20px;
+    line-height: 26px;
+    @extend %poppins-500;
+    color: $white;
+  }
+}
+
 .recent-posts{
   margin-bottom: 60px;
   &__title{
@@ -325,12 +335,17 @@
   right: 40px;
   bottom: 43px;
   }
-  &__categories{
+  &__categories,
+  &__newsletter,
+  &__recent{
     margin-bottom: 50px;
   }
-  &__newsletter{
+  /* &__newsletter{
     margin-bottom: 50px;
   }
+  &__recent{
+    margin-bottom: 50px;
+  } */
 }
 
 .filter-categories{
@@ -343,10 +358,12 @@
   &__label{
     display: block;
     border-top: 1px solid #3A3F50;
+    margin-bottom: 10px;
     cursor: pointer;
   }
   &__img-box{
     width: 60px;
+    height: 60px;
     position: relative;
     margin-right: 30px;
     &::before{
@@ -415,5 +432,87 @@
   }
   .author__link{
     text-transform: uppercase;
+  }
+}
+
+.tags{
+  &__title{
+    font-size: 28px;
+    line-height: 36px;
+    @extend %poppins-500;
+    margin-bottom: 30px;
+  }
+  &__form-label{
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  &__form-input{
+    @extend %checkbox-hidden;
+    &:checked + .tags__form-checkbox{
+      background-color: $accent;
+      color: $white;
+    }
+  }
+  &__form-checkbox{
+    font-size: 16px;
+    line-height: 27px;
+    padding: 6px 19px;
+    background-color: $bg-block;
+  }
+}
+
+.recent{
+  &__title{
+    font-size: 28px;
+    line-height: 36px;
+    @extend %poppins-500;
+    margin-bottom: 30px;
+  }
+  &__item{
+    margin-bottom: 50px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__link-img{
+    display: block;
+    width: 260px;
+    margin-bottom: 10px;
+    background-color: #000;
+    position: relative;
+    &::before{
+      content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(25, 28, 38, 0) 0%, #191C26 100%);
+    }
+  }
+  &__img{
+    width: 260px;
+    height: 150px;
+    object-fit: cover;
+  }
+  &__time{
+    font-size: 14px;
+    line-height: 24px;
+    color: #6E7788;
+    display: block;
+    margin-bottom: 15px;
+  }
+  &__text{
+    color: $white;
+    font-size: 20px;
+    line-height: 26px;
+    @extend %poppins-500;
+    transition: all .3s linear;
+    &:hover{
+      color: $accent;
+    }
   }
 }
