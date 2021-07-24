@@ -42,7 +42,7 @@ $(function(){
   });
 
   $('.post-slider').slick({
-    infinite: false,
+    infinite: true,
     speed: 900,
     slidesToScroll: 1,
     slidesToShow: 1,
@@ -53,12 +53,10 @@ $(function(){
   });
 
   $('.name-post').slick({
-    infinite: false,
+    infinite: true,
     speed: 900,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
-    fade: true,
-    cssEase: 'linear',
     arrows: false,
     asNavFor: '.post-slider',
   });
