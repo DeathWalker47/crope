@@ -262,16 +262,15 @@
 
 
 .about{
-  /* background-image: url('../images/two-bg.jpg'); */
+  background-image: url('../images/bg-ab1.jpg');
   background-repeat: no-repeat;
-  /* background-size: 50%; */
   background-color: $bg-two;
- /*  &::before{
+  /* &::before{
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    right: 50%;
+    right: 0%;
     bottom: 0;
     background: linear-gradient(270.48deg, #12141C 0.45%, rgba(8, 10, 16, 0) 83.36%);
   } */
@@ -281,7 +280,7 @@
   }
   &__img-box{
     margin-right: 25px;
-    max-width: 950px;
+    width: 950px;
     position: relative;
     &::before{
       content: '';
@@ -294,15 +293,15 @@
     }
   }
   &__img{
-    max-width: 950px;
-    max-height: 1024px;
+    width: 950px;
+    height: 1024px;
     object-fit: cover;
   }
   &__content{
     max-width: 530px;
     padding-top: 224px;
-    padding-bottom: 40px;
-    /* margin-left: auto; */
+    padding-bottom: 200px;
+    margin-left: auto;
   }
   &__subtitle{
     margin-bottom: 20px;
@@ -392,7 +391,9 @@
   }
 }
 .services-slider{
-  padding-left: 367px;
+  /* padding-left: 367px; */
+  margin-left: auto;
+  max-width: 1520px;
   &__item{
     max-width: 380px;
     width: 100%;

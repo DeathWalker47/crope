@@ -221,6 +221,26 @@ body{
   }
 }
 
+@media (max-width:880px){
+  .number {
+    top: 60px;
+    right: 45px;
+    font-size: 70px;
+  }
+}
+
+@media (max-width:540px){
+  .title {
+    font-size: 46px;
+    line-height: 50px;
+    &::after {
+      bottom: 10px;
+      width: 8px;
+      height: 8px;
+    }
+  }
+}
+
 @media (max-width:440px){
   .subtitle{
     font-size: 14px;
@@ -230,7 +250,19 @@ body{
       width: 35px;
     }
   }
+
+  .number {
+    top: 30px;
+    right: 20px;
+    font-size: 50px;
+  }
+
+  .read-more {
+    font-size: 12px;
+    line-height: 20px;
+  }
 }
+
 @media (max-width:380px){
   .subtitle{
     font-size: 11px;
@@ -239,5 +271,17 @@ body{
     &::before {
       width: 25px;
     }
+  }
+}
+
+@media (max-width:340px){
+  .number {
+    top: 20px;
+    right: 15px;
+    font-size: 35px;
+  }
+  .title {
+    font-size: 35px;
+    line-height: 40px;
   }
 }
