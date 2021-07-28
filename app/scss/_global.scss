@@ -219,5 +219,25 @@ body{
     color: #3A3F50;
     font-family: inherit;
   }
+}
 
+@media (max-width:440px){
+  .subtitle{
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 50px;
+    &::before {
+      width: 35px;
+    }
+  }
+}
+@media (max-width:380px){
+  .subtitle{
+    font-size: 11px;
+    line-height: 13px;
+    padding-left: 35px;
+    &::before {
+      width: 25px;
+    }
+  }
 }

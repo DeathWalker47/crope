@@ -11,6 +11,14 @@ $(function(){
     autoplay: true,
     autoplaySpeed: 4000,
     prevArrow: '<button type="button" class="slick-prev">Prev</button>',
+    /* responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          dots: false,
+        }
+      }
+    ] */
   });
 
   $('.services-slider').slick({
