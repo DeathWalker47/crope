@@ -27,6 +27,27 @@ $(function(){
     slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow: '<button type="button" class="slick-prev">Prev</button>',
+    responsive: [
+      {
+        breakpoint: 1201,
+        settings: {
+        slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 541,
+        settings: {
+        slidesToShow: 1,
+        }
+      },
+      {
+        breakpoint: 321,
+        settings: {
+        slidesToShow: 1,
+        arrows:false,
+        }
+      },
+    ]
   });
 
   $('.slider-team').slick({

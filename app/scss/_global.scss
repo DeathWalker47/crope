@@ -260,6 +260,11 @@ body{
   .read-more {
     font-size: 12px;
     line-height: 20px;
+    padding-bottom: 7px;
+    display: inline-block;
+    &::before{
+      top: 4px;
+    }
   }
 }
 
@@ -271,6 +276,12 @@ body{
     &::before {
       width: 25px;
     }
+  }
+}
+
+@media (max-width:360px){
+  .title {
+    font-size: 44px;
   }
 }
 

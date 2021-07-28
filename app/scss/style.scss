@@ -339,8 +339,9 @@
   &__title{
     margin-bottom: 40px;
   }
-  .title::after{
-    right: -2%;
+  .title::after {
+    right: 0%;
+    bottom: 8px;
   }
   &__text{
     margin-bottom: 70px;

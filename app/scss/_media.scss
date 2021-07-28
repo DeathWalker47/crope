@@ -47,6 +47,14 @@
       font-size: 18px;
     }
   }
+
+  .slick-arrow{
+    right: 65px;
+    top: -65px;
+  }
+  .slick-prev {
+    right: 180px;
+  }
 }
 @media (max-width:1080px){
   .header{
@@ -221,6 +229,17 @@
     background-position: center center;
     background-size: cover;
   }
+
+  .services{
+    background-size: 70%;
+    padding: 120px 0;
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__text {
+      margin-bottom: 90px;
+    }
+  }
 }
 
 @media /* (min-width: 550px) and  */(max-width: 570px) and (orientation: landscape){
@@ -239,7 +258,7 @@
     /* &__content {
       top: 70%;
     } */
-    &__title {
+    .title {
       font-size: 34px;
       line-height: 40px;
       margin-bottom: 10px;
@@ -250,6 +269,12 @@
       width: 7px;
       height: 7px;
     }
+  }
+  .about .title::after {
+    right: 46%;
+  }
+  .title {
+    font-size: 61px;
   }
 }
 
@@ -305,6 +330,19 @@
       font-size: 16px;
       line-height: 27px;
     }
+  }
+
+  .services {
+    .title::after {
+      right: 20%;
+      bottom: 8px;
+    }
+  }
+  .services-slider .slick-slide {
+    max-width: 100%;
+  }
+  .services-slider__item {
+    max-width: 100%;
   }
 }
 
@@ -411,6 +449,32 @@
       right: 30%;
     }
   }
+
+  .slick-arrow {
+    right: 20px;
+    top: -35px;
+    width: 50px;
+    font-size: 12px;
+    line-height: 12px;
+    padding-bottom: 7px;
+  }
+  .slick-prev {
+    right: 90px;
+  }
+
+  .services {
+    padding: 80px 0;
+    .title::after {
+      right: 35%;
+    }
+    &__text {
+      margin-bottom: 50px;
+    }
+  }
+  .services-slider__item {
+    padding: 50px 0;
+    /* max-width: 85%; */
+  }
 }
 
 @media (max-width:380px){
@@ -431,6 +495,25 @@
 
   .about .title::after {
     right: 23%;
+  }
+  .services .title::after {
+    right: 28%;
+  }
+  .slick-slide img {
+    width: 55%;
+  }
+  .services-slider{
+    &__item {
+      padding: 30px 0;
+    }
+    &__circle {
+      margin-bottom: 15px;
+      width: 100px;
+      height: 100px;
+    }
+    &__text {
+      margin: 0 auto 20px;
+    }
   }
 }
 
@@ -461,6 +544,34 @@
       padding: 60px 0;
     } 
   }
+
+  .services{
+    padding: 60px 0;
+    .title::after {
+      right: 34%;
+    }
+    &__title {
+      margin-bottom: 15px;
+    }
+    &__text{
+      font-size: 16px;
+    }
+  }
+
+  .services-slider__item {
+    max-width: 85%;
+  }
+}
+
+@media (max-width:360px){
+ /*  .about {
+    .title{
+      font-size: 44px;
+      &::after {
+        right: 64%;
+      }
+    }
+  } */
 }
 
 @media (max-width:320px){
