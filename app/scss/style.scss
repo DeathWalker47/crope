@@ -65,9 +65,9 @@
   &__item-link--active{
     color: $accent;
   }
-  .error-404{
+  /* .error-404{
     display: none;
-  }
+  } */
 }
 
 
@@ -354,6 +354,10 @@
 .slick-disabled{
   color: rgba($color: #fff, $alpha: .4);
   border-bottom: 1px solid rgba($color: #fff, $alpha: .4);
+  &:hover{
+    color: rgba($color: #fff, $alpha: .4);
+    border-bottom: 1px solid rgba($color: #fff, $alpha: .4);
+  }
 }
 .services-slider{
   padding-left: 367px;

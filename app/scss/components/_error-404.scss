@@ -87,6 +87,7 @@
     background-color: transparent;
     padding: 0;
     border: none;
+    cursor: pointer;
   }
   .footer{
     position: static;
@@ -139,6 +140,9 @@
   .menu{
     .menu__item{
       z-index: 10;
+      .error-404{
+        display: none;
+      }
       &:nth-child(1){
         position: absolute;
         top: 10%;

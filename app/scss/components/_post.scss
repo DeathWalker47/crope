@@ -126,6 +126,7 @@
       line-height: 26px;
       @extend %poppins-500;
       margin-bottom: 15px;
+      color: $white;
     }
     &__text{
       margin-bottom: 20px;
@@ -188,6 +189,10 @@
     line-height: 26px;
     @extend %poppins-500;
     color: $white;
+    transition: all .3s linear;
+    &:hover{
+      color: $accent;
+    }
   }
   .slick-active:not(.slick-current ){
     text-align: right;
@@ -267,6 +272,7 @@
     display: inline-block;
     font-size: 20px;
     line-height: 26px;
+    color: $white;
     @extend %poppins-500;
     position: relative;
     &::before{
@@ -329,12 +335,16 @@
 }
 
 .aside{
-
+  &__title{
+    color: $white;
+    font-size: 28px;
+    line-height: 36px;
+    @extend %poppins-500;
+  }
   &__form-search{
     position: relative;
     padding: 40px;
-    background-color: $bg-block
-;
+    background-color: $bg-block;
     margin-bottom: 50px;
   }
 
@@ -360,9 +370,6 @@
 
 .filter-categories{
   &__title{
-    font-size: 28px;
-    line-height: 36px;
-    @extend %poppins-500;
     margin-bottom: 30px;
   }
   &__label{
@@ -416,10 +423,7 @@
   padding: 45px 40px;
   background-color: $bg-block;
   &__title{
-    color: $white;
-    font-size: 28px;
-    line-height: 36px;
-    @extend %poppins-500;
+    
     margin-bottom: 30px;
   }
   &__form{
@@ -430,6 +434,7 @@
   &__form-input{
     width: 180px;
     display: block;
+    padding-right: 30px;
   }
   &__form-btn{
     position: absolute;
@@ -447,9 +452,6 @@
 
 .tags{
   &__title{
-    font-size: 28px;
-    line-height: 36px;
-    @extend %poppins-500;
     margin-bottom: 30px;
   }
   &__form-label{
@@ -475,9 +477,6 @@
 
 .recent{
   &__title{
-    font-size: 28px;
-    line-height: 36px;
-    @extend %poppins-500;
     margin-bottom: 30px;
   }
   &__item{
