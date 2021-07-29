@@ -75,7 +75,12 @@
       margin-right: 0;
     }
   }
+
+  .news__small {
+    margin-right: auto;
+  }
 }
+
 @media (max-width:1080px){
   .header{
     &__tel{
@@ -109,9 +114,6 @@
       margin-bottom: 50px;
     }
   }
-}
-
-@media (max-width:1080px){
   .about {
     background-image: none;
     &__content {
@@ -135,6 +137,32 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
+    }
+  }
+
+  .cases{
+    &__inner{
+      padding-top: 100px;
+    }
+    &__list{
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (max-width:1000px){
+  .posts {
+    padding: 120px 0;
+  }
+  .news {
+    flex-direction: column;
+    &__small {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+    &__small-item:first-child {
+      margin-bottom: 25px;
     }
   }
 }
@@ -256,6 +284,19 @@
       bottom: 13px;
     }
   }
+  .presintation .title::after {
+    right: 10%;
+    bottom: 10px;
+  }
+  .cases .title::after {
+    right: 1%;
+    bottom: 10px;
+  }
+
+  .posts .title::after {
+    right: 12%;
+    bottom: 10px;
+  }
 }
 
 @media (max-width:880px){
@@ -296,6 +337,19 @@
     }
     &__info{
       flex-wrap: wrap;
+    }
+  }
+
+  .cases{
+    &__inner {
+      align-items: start;
+      flex-direction: column;
+    }
+    &__item{
+      width: 50%;
+    }
+    &__text {
+      margin-bottom: 20px;
     }
   }
 }
@@ -341,6 +395,18 @@
   .presintation .title::after {
     right: 14%;
   }
+
+  .cases .title::after {
+    right: 4%;
+    bottom: 12px;
+  }
+
+  .posts .title::after {
+    right: 14%;
+    bottom: 11px;
+  }
+
+  
 }
 
 @media (max-width:640px){
@@ -456,8 +522,43 @@
     &__info-item{
       margin-right: 0;
     }
-    
   } 
+
+  .cases{
+    &__inner{
+      margin-bottom: 50px;
+    }
+    &__subtitle {
+      margin-bottom: 10px;
+    }
+    &__title {
+      margin-bottom: 25px;
+    }
+    .title::after {
+      right: 20%;
+    }
+    &__item {
+      width: 100%;
+    }
+    &__item-img{
+      width: 100%;
+    }
+  }
+
+  .posts{
+    &__subtitle {
+      margin-bottom: 10px;
+    }
+    &__title {
+      margin-bottom: 25px;
+    }
+    .title::after {
+      right: 30%;
+    }
+    &__top {
+      margin-bottom: 40px;
+    }
+  }
 }
 
 @media (max-width:440px){
@@ -623,6 +724,41 @@
       background: linear-gradient(180deg, #080A12 0%, rgba(8, 10, 18, 0) 100%);
     }
   }
+
+  .cases {
+    .title::after {
+      right: -2%;
+    }
+    &__inner {
+      padding-top: 80px;
+    }
+    ul.cases__list {
+      margin-bottom: 80px;
+    }
+  }
+
+  .posts {
+    padding: 80px 0;
+    background-size: contain;
+    background-position: right 20%;
+    .title::after {
+      right: 9%;
+    }
+  }
+  .news{
+    &__small-link {
+      margin-right: 15px;
+      height: 170px;
+    }
+    &__top-link {
+      margin-right: 10px;
+    }
+    &__content-link {
+      font-size: 15px;
+      line-height: 22px;
+      margin-bottom: auto;
+    }
+  }
 }
 
 @media (max-width:390px){
@@ -641,6 +777,25 @@
   }
   .presintation .title::after {
     right: 7%;
+  }
+  .cases .title::after {
+    right: 59%;
+  }
+  .news{
+    &__top{
+    display: block;
+    }
+    &__time{
+    display: block;
+    }
+    &__big{
+      .news__top {
+        display: flex;
+      }
+    }
+  }
+  .posts .title::after {
+    right: 3%;
   }
 }
 
@@ -689,6 +844,12 @@
   .presintation .title::after {
     right: 3%;
   }
+  .cases .title::after {
+    right: 57%;
+  }
+  .posts .title::after {
+    right: 0%;
+  }
 }
 
 
@@ -701,7 +862,7 @@
       margin-bottom: 15px;
     }
     .title::after {
-      right: 29%;
+      right: 47%;
       bottom: 8px;
     }
     &__descr {
@@ -722,7 +883,7 @@
   .services{
     padding: 60px 0;
     .title::after {
-      right: 34%;
+      right: 0;
     }
     &__title {
       margin-bottom: 15px;
@@ -740,8 +901,11 @@
     &__content {
       padding: 60px 0;
     }
+    &__title {
+      margin-bottom: 15px;
+    }
     .title::after {
-      right: 22%;
+      right: 27%;
       bottom: 7px;
     }
     &__text {
@@ -757,8 +921,11 @@
     &__inner {
       padding: 60px 0;
     }
+    &__title {
+      margin-bottom: 15px;
+    }
     .title::after {
-      right: 10%;
+      right: 16%;
       bottom: 8px;
     }
     &__item {
@@ -797,18 +964,65 @@
       line-height: 16px;
     }
   }
+
+  .cases{
+    &__inner {
+      padding-top: 60px;
+      margin-bottom: 30px;
+    }
+    &__title {
+      margin-bottom: 15px;
+    }
+    .title::after {
+      right: 3%;
+    }
+    ul.cases__list {
+      margin-bottom: 60px;
+    }
+    &__text{
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .posts{
+    padding: 60px 0;
+    .title::after {
+      right: 13%;
+    }
+    &__text{
+      font-size: 15px;
+    }
+    &__title {
+      margin-bottom: 15px;
+    }
+  }
+
+  .news{
+    &__small-item {
+      flex-direction: column;
+    }
+    &__small-img{
+      min-width: 100%;
+    }
+    &__small-link {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__big-link {
+      height: 300px;
+    }
+    &__big-img{
+      height: 300px;
+    }
+  }
 }
 
-@media (max-width:360px){
- /*  .about {
-    .title{
-      font-size: 44px;
-      &::after {
-        right: 64%;
-      }
-    }
-  } */
-}
 
 @media (max-width:320px){
   .top{

@@ -632,7 +632,6 @@
   &__list{
     display: flex;
     justify-content: flex-end;
-    flex-wrap: wrap;
   }
   &__item{
     width: 380px;
@@ -745,7 +744,6 @@
 
 .news{
   display: flex;
-  align-items: flex-end;
   &__small{
     max-width: 550px;
     margin-right: 140px;
@@ -803,13 +801,13 @@
     }
   }
   &__big{
-    width: 391px;
+    max-width: 391px;
     position: relative;
     .news__content{
       position: absolute;
       bottom: 40px;
       left: 25px;
-      right: 10px;
+      right: 25px;
     }
   }
   &__big-link{

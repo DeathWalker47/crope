@@ -182,7 +182,9 @@ body{
   line-height: 24px;
   @extend %mulish-400;
   padding: 5px 15px;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-color: $accent;
   color: $white;
   transition: all .3s linear;
@@ -300,11 +302,27 @@ body{
     font-size: 35px;
   }
   .title {
-    font-size: 35px;
+    font-size: 33px;
     line-height: 40px;
+    &::after{
+      width: 6px;
+      height: 6px;
+    }
   }
   .input,
   .textarea{
     font-size: 16px;
+  }
+
+  .read-more {
+    font-size: 10px;
+    line-height: 14px;
+    padding-bottom: 5px;
+    padding-right: 17px;
+    &::before{
+      top: 3px;
+      width: 8px;
+      height: 9px;
+    }
   }
 }
