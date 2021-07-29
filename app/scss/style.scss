@@ -438,10 +438,10 @@
 .consultation{
   background-image: url('../images/fore-bg.jpg');
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: contain;
   background-position: right;
   background-color: $bg-two;
-  &::before{
+/*   &::before{
     content: '';
     position: absolute;
     top: 0;
@@ -449,7 +449,7 @@
     right: 0;
     bottom: 0;
     background: linear-gradient(90deg, #12141C 0%, rgba(18, 20, 28, 0) 100%);
-  }
+  } */
   &__content{
     padding: 210px 0 220px;
     max-width: 550px;
@@ -517,7 +517,7 @@
     display: flex;
   }
   &__info{
-    margin-right: 115px;
+    margin-right: 85px;
     column-count: 2;
   }
   &__info-item{
@@ -584,7 +584,7 @@
     &::before{
       content: '';
       position: absolute;
-      top: 0;
+      top: 5px;
       left: 0;
       background-image: url('../images/decor/check.svg');
       background-repeat: no-repeat;

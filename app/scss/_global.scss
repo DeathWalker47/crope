@@ -212,12 +212,20 @@ body{
   color: #3A3F50;
   resize: none;
   display: block;
-  padding-left: 10px;
+  padding-right: 10px;
   &::placeholder{
     font-size: inherit;
     line-height: inherit;
     color: #3A3F50;
     font-family: inherit;
+  }
+}
+
+@media (max-width:1080px){
+  .number {
+    top: 75px;
+    right: 55px;
+    font-size: 85px;
   }
 }
 
@@ -294,5 +302,9 @@ body{
   .title {
     font-size: 35px;
     line-height: 40px;
+  }
+  .input,
+  .textarea{
+    font-size: 16px;
   }
 }
