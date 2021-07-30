@@ -557,6 +557,19 @@
   .newsletter::before {
     right: 100%;
   }
+
+  .slick-arrow {
+    right: 30px;
+    top: -55px;
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 7px;
+    width: 60px;
+  }
+
+  .slick-prev {
+    right: 114px;
+  }
 }
 
 @media (max-width:540px){
@@ -1015,6 +1028,7 @@
   .newsletter .title::after {
     right: 60%;
   }
+ 
 }
 
 @media (max-width:380px){
@@ -1039,7 +1053,7 @@
   .services .title::after {
     right: 28%;
   }
-  .slick-slide img {
+  .services-slider__icon {
     width: 55%;
   }
   .services-slider{

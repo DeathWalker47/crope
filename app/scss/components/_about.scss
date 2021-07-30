@@ -224,6 +224,9 @@
 
 .video{
   &__popup{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 750px;
   display: flex;
   justify-content: center;
