@@ -4,9 +4,6 @@
   background-repeat: no-repeat;
   background-position: right 90%;
   background-size: auto;
-  .number{
-    top: 290px;
-  }
   &__content{
     padding: 270px 0 120px;
   }
@@ -49,7 +46,7 @@
     }
   }
   &__circle-box{
-    width: 450px;
+    max-width: 450px;
     display: flex;
     justify-content: center;
   }

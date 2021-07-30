@@ -1,0 +1,155 @@
+
+
+@media /* (min-width: 550px) and  */(max-width: 900px) and (orientation: landscape){
+  .about-us .title::after {
+    right: 12%;
+    bottom: 11px;
+  }
+}
+
+
+
+@media (max-width:880px){
+  .about-us{
+    &__content {
+      padding: 240px 0 100px;
+    }
+    &__item {
+      flex-direction: column;
+      max-width: 540px;
+      align-items: start;
+      margin: 0 auto;
+    }
+    &__text {
+      margin-bottom: 15px;
+    }
+    &__item-top,
+    &__item-box  {
+      margin-bottom: 35px;
+    }
+    &__circle-box{
+      order: 1;
+      margin: 0 auto 45px;
+    }
+  }
+}
+
+@media /* (min-width: 550px) and  */(max-width: 570px) and (orientation: landscape){
+  .about-us{
+    &__content {
+      padding: 165px 0 100px;
+    }
+    .title::after {
+      right: 27%;
+    }
+  }
+}
+
+
+@media (max-width:540px){
+  .about-us{
+    &__subtitle {
+      margin-bottom: 10px;
+    }
+    &__title {
+      margin-bottom: 25px;
+    }
+    &__circle {
+      width: 250px;
+      padding: 70px 10px;
+    }
+    .title::after {
+      right: 43%;
+      bottom: 8px;
+    }
+    &__num {
+      font-size: 70px;
+      line-height: 70px;
+      margin-bottom: 10px;
+    }
+    &__descr {
+      font-size: 20px;
+      line-height: 22px;
+    }
+  }
+}
+
+@media (max-width:440px){
+  .about-us{
+    &__content {
+      padding: 160px 0 35px;
+    }
+    .title::after {
+      right: 12%;
+    }
+    &__circle-box {
+      margin: 0 auto 30px;
+    }
+    &__circle {
+      width: 180px;
+      padding: 48px 10px;
+    }
+    &__num {
+      font-size: 55px;
+      line-height: 55px;
+      margin-bottom: 5px;
+    }
+    &__descr {
+      font-size: 16px;
+    }
+    &__item-top,
+    &__item-box  {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 390px){
+  .about-us .title::after {
+    right: 7%;
+  }
+}
+@media (max-width: 380px){
+  .about-us .title::after {
+    right: 16%;
+  }
+
+}
+@media (max-width: 340px){
+  .about-us{
+    &__content {
+      padding: 160px 0 15px;
+    }
+    &__title {
+      padding-right: 10px;
+      margin-bottom: 15px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+    &__item-top,
+    &__item-box  {
+      margin-bottom: 13px;
+    }
+    &__item-title {
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 20px;
+    }
+    &__text {
+      margin-bottom: 10px;
+    }
+    &__circle {
+      width: 150px;
+      padding: 41px 10px;
+    }
+    &__num {
+      font-size: 45px;
+      line-height: 45px;
+    }
+    &__descr {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}

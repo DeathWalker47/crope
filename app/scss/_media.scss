@@ -1,3 +1,4 @@
+@import './media/about';
 
 
 
@@ -211,6 +212,14 @@
     padding: 25px 30px;
   }
   .top{
+    .subtitle{
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 50px;
+    &::before {
+      width: 35px;
+    }
+  }
     &__content{
       top: 60%;
     }
@@ -266,14 +275,14 @@
     }
   }
 
-  .subtitle{
+  /* .subtitle{
     font-size: 14px;
     line-height: 18px;
     padding-left: 50px;
     &::before {
       width: 35px;
     }
-  }
+  } */
   .btn{
     img{
       max-width: 60%;
@@ -457,7 +466,19 @@
   .header {
     padding: 15px 20px;
   }
-  .subtitle{
+  /* .subtitle{
+    font-size: 11px;
+    line-height: 13px;
+    padding-left: 35px;
+    &::before {
+      width: 25px;
+    }
+  } */
+  .top{
+    /* &__content {
+      top: 70%;
+    } */
+    .subtitle{
     font-size: 11px;
     line-height: 13px;
     padding-left: 35px;
@@ -465,10 +486,6 @@
       width: 25px;
     }
   }
-  .top{
-    /* &__content {
-      top: 70%;
-    } */
     .title {
       font-size: 34px;
       line-height: 40px;
@@ -505,7 +522,10 @@
     bottom: 11px;
   }
 
-  
+  .newsletter .title::after {
+    right: 64%;
+    bottom: 12px;
+  }
 }
 
 @media (max-width:640px){
@@ -551,6 +571,9 @@
   }
 
   .about{
+    &__subtitle {
+      margin-bottom: 10px;
+    }
     &__title {
       margin-bottom: 20px;
     }
@@ -570,6 +593,9 @@
   }
 
   .services {
+    &__subtitle {
+      margin-bottom: 10px;
+    }
     .title::after {
       right: 20%;
       bottom: 8px;
@@ -1051,9 +1077,6 @@
 
 @media (max-width:340px){
   .about{
-    &__subtitle {
-      margin-bottom: 10px;
-    }
     &__title {
       margin-bottom: 15px;
     }
@@ -1242,6 +1265,10 @@
         width: 65px;
         height: 65px;
       }
+    }
+    &__form-input {
+      margin-right: 30px;
+      width: 230px;
     }
   }
 
