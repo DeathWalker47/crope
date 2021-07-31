@@ -4,9 +4,6 @@
   background-repeat: no-repeat;
   background-size: auto;
   background-position: right 40%;
-  .number{
-    top: 290px;
-  }
   &__inner{
     padding: 270px 0 140px;
   }
@@ -19,9 +16,6 @@
   &__title{
     margin-bottom: 40px;
   }
-  .title::after{
-    right: 34%;
-  }
   &__text{
     max-width: 540px;
   }
@@ -32,7 +26,7 @@
   flex-wrap: wrap;
   margin-bottom: 40px;
   &__item{
-    width: 555px;
+    max-width: 555px;
     margin-bottom: 30px;
     overflow: hidden;
     position: relative;
@@ -53,7 +47,7 @@
     }
   }
   &__link{
-    width: 555px;
+    max-width: 555px;
     display: block;
     position: relative;
     z-index: 3;
@@ -75,7 +69,7 @@
   }
   .news__content{
     position: absolute;
-    top: 73%;
+    bottom: 40px;
     right: 20px;
     left: 40px;
     z-index: 3;

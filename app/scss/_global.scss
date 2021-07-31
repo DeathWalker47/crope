@@ -353,6 +353,12 @@ body{
       top: 4px;
     }
   }
+
+  .teg-link {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 5px 10px;
+  }
 }
 
 @media (max-width:380px){
@@ -368,7 +374,12 @@ body{
 
 @media (max-width:360px){
   .title {
-    font-size: 44px;
+    font-size: 43px;
+    span {
+      width: 8px;
+      height: 8px;
+      margin-left: 3px;
+    }
   }
 }
 
@@ -381,11 +392,6 @@ body{
   .title {
     font-size: 33px;
     line-height: 40px;
-    span {
-      width: 8px;
-      height: 8px;
-      margin-left: 3px;
-    }
   }
   .input,
   .textarea{

@@ -5,17 +5,11 @@
   background-repeat: no-repeat;
   background-size: auto;
   background-position: right 70%;
-  .number{
-    top: 290px;
-  }
   &__subtitle{
     margin-bottom: 20px;
   }
   &__title{
     margin-bottom: 40px;
-  }
-  .title::after{
-    right: 14%;
   }
 }
 

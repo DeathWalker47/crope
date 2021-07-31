@@ -1,6 +1,8 @@
 @import './media/about';
 @import './media/services';
 @import './media/cases';
+@import './media/blog';
+@import './media/portfolio';
 
 
 
@@ -615,6 +617,7 @@
     }
     &__item-img{
       width: 100%;
+      height: 400px;
     }
   }
 
@@ -893,7 +896,7 @@
 
 @media (max-width:390px){
   .news{
-    &__top{
+    .news__top{
     display: block;
     }
     &__time{
@@ -1086,7 +1089,7 @@
       margin-right: 0;
       margin-bottom: 15px;
     }
-    &__top {
+    .news__top {
       display: flex;
       justify-content: space-between;
       align-items: center;
