@@ -1,5 +1,6 @@
 @import './media/about';
 @import './media/services';
+@import './media/cases';
 
 
 
@@ -166,6 +167,9 @@
     &__list{
       flex-wrap: wrap;
       justify-content: center;
+    }
+    &__item {
+      margin-bottom: 20px;
     }
   }
   .posts{
@@ -812,6 +816,12 @@
     }
     ul.cases__list {
       margin-bottom: 80px;
+      padding: 0 15px;
+    }
+    &__item-link {
+      &:hover{
+        transform: translateY(0px);
+      }
     }
   }
 
@@ -1049,6 +1059,9 @@
     &__text{
       font-size: 16px;
       margin-bottom: 10px;
+    }
+    &__item-img{
+      height: 380px;
     }
   }
 

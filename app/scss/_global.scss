@@ -249,6 +249,22 @@ body{
   }
 }
 
+@media (max-width: 900px) and (orientation: landscape){
+  .breadcrumbs {
+    top: 145px;
+    right: 65px;
+  }
+  .number.top-number {
+    top: 210px!important;
+    right: 40px;
+  }
+  .title {
+    font-size: 60px;
+    line-height: 65px;
+  }
+}
+
+
 @media (max-width:880px){
   .number {
     top: 60px;
@@ -273,14 +289,20 @@ body{
 
 
 @media (max-width:540px){
+  .breadcrumbs {
+    top: 160px;
+    right: 35px;
+  }
+  .number.top-number {
+    top: 210px;
+  }
+  .number{
+    font-size: 60px;
+    right: 35px;
+  }
   .title {
     font-size: 45px;
     line-height: 50px;
-    &::after {
-      bottom: 10px;
-      width: 8px;
-      height: 8px;
-    }
   }
 }
 

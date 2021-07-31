@@ -4,9 +4,6 @@
   background-size: auto;
   background-repeat: no-repeat;
   background-position: right 55%;
-  .number{
-    top: 290px;
-  }
   &__top{
     padding: 270px 0 60px;
     max-width: 770px;
@@ -17,9 +14,7 @@
   &__title{
     margin-bottom: 40px;
   }
-  .title::after{
-    right: 19%;
-  }
+  
   &__text{
     margin-bottom: 70px;
     max-width: 550px;
