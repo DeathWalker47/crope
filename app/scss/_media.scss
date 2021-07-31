@@ -1,4 +1,5 @@
 @import './media/about';
+@import './media/services';
 
 
 
@@ -23,11 +24,6 @@
       line-height: 90px;
       margin-bottom: 40px;
     }
-    .title::after{
-      width: 13px;
-      height: 13px;
-      right: 43%;
-    }
     &__text {
       font-size: 20px;
       line-height: 30px;
@@ -36,15 +32,14 @@
     }
 
   }
-  .consultation{
-    .title::after {
-      right: 26%;
-      bottom: 12px;
-    }
-  }
 }
 
 @media (max-width:1366px){
+  .top .title span {
+    width: 15px;
+    height: 15px;
+    margin-left: -20px;
+  }
   .newsletter::before {
     right: 40%;
   }
@@ -114,9 +109,10 @@
       line-height: 65px;
       margin-bottom: 20px;
     }
-    .title::after{
-      right: 24%;
-      bottom: 10px;
+    .title span {
+      width: 15px;
+      height: 15px;
+      margin-left: -10px;
     }
     &__subtitle {
       margin-bottom: 10px;
@@ -127,9 +123,6 @@
   }
   .about {
     background-image: none;
-    .title::after {
-      right: 31%;
-    }
     &__content {
       max-width: 540px;
       margin: 0 auto;
@@ -145,9 +138,6 @@
     &__content {
       max-width: 540px;
     }
-    .title::after {
-      right: 25%;
-    }
   }
  
 
@@ -162,10 +152,6 @@
       margin: 0 auto;
       max-width: 540px;
     }
-    .title::after {
-      right: 13%;
-    }
-    
     &__info {
       display: flex;
       justify-content: space-around;
@@ -212,6 +198,11 @@
     padding: 25px 30px;
   }
   .top{
+    .title span {
+      width: 10px;
+      height: 10px;
+      margin-left: -8px;
+    }
     .subtitle{
     font-size: 14px;
     line-height: 18px;
@@ -227,12 +218,6 @@
       font-size: 40px;
       line-height: 45px;
       margin-bottom: 15px;
-    }
-    .title::after {
-      right: 52%;
-      bottom: 9px;
-      width: 10px;
-      height: 10px;
     }
     &__text {
       font-size: 16px;
@@ -325,26 +310,6 @@
   .slick-dots li {
     margin-bottom: 10px;
   }
-
-  .consultation{
-    .title::after {
-      right: 26%;
-      bottom: 13px;
-    }
-  }
-  .presintation .title::after {
-    right: 10%;
-    bottom: 10px;
-  }
-  .cases .title::after {
-    right: 1%;
-    bottom: 10px;
-  }
-
-  .posts .title::after {
-    right: 12%;
-    bottom: 10px;
-  }
 }
 
 @media (max-width:880px){
@@ -385,10 +350,6 @@
     &__title {
       max-width: 100%;
       margin-bottom: 10px;
-    }
-    .title::after {
-      right: 62%;
-      bottom: 12px;
     }
     &__text {
       max-width: 100%;
@@ -475,9 +436,6 @@
     }
   } */
   .top{
-    /* &__content {
-      top: 70%;
-    } */
     .subtitle{
     font-size: 11px;
     line-height: 13px;
@@ -490,41 +448,15 @@
       font-size: 34px;
       line-height: 40px;
       margin-bottom: 10px;
+      span {
+        width: 8px;
+        height: 8px;
+        margin-left: -6px;
+      }
     }
-    .title::after {
-      right: 8%;
-      bottom: 8px;
-      width: 7px;
-      height: 7px;
-    }
-  }
-  .about .title::after {
-    right: 46%;
   }
   .title {
     font-size: 61px;
-  }
-
-  .consultation .title::after {
-    right: 28%;
-  }
-  .presintation .title::after {
-    right: 14%;
-  }
-
-  .cases .title::after {
-    right: 4%;
-    bottom: 12px;
-  }
-
-  .posts .title::after {
-    right: 14%;
-    bottom: 11px;
-  }
-
-  .newsletter .title::after {
-    right: 64%;
-    bottom: 12px;
   }
 }
 
@@ -590,9 +522,6 @@
     &__title {
       margin-bottom: 20px;
     }
-    .title::after {
-      right: 77%;
-    }
     &__descr {
       margin-bottom: 15px;
       font-size: 20px;
@@ -608,10 +537,6 @@
   .services {
     &__subtitle {
       margin-bottom: 10px;
-    }
-    .title::after {
-      right: 20%;
-      bottom: 8px;
     }
   }
   .services-slider .slick-slide {
@@ -661,9 +586,6 @@
     &__title {
       margin-bottom: 25px;
     }
-    .title::after {
-      right: 33%;
-    }
     &__text {
       font-size: 20px;
       line-height: 28px;
@@ -684,9 +606,6 @@
     &__title {
       margin-bottom: 25px;
     }
-    .title::after {
-      right: 20%;
-    }
     &__item {
       width: 100%;
     }
@@ -702,19 +621,12 @@
     &__title {
       margin-bottom: 25px;
     }
-    .title::after {
-      right: 30%;
-    }
     &__top {
       margin-bottom: 40px;
     }
   }
 
   .newsletter{
-    .title::after {
-      right: 14%;
-      bottom: 9px;
-    }
     &__form-input {
       background-color: transparent;
       border: none;
@@ -778,11 +690,9 @@
       line-height: 25px;
       color: #DD4242;
     }
-    .title::after {
-      right: 38%;
-      bottom: 8px;
-      width: 9px;
-      height: 9px;
+    .title span {
+      width: 12px;
+      height: 12px;
     }
     .slick-arrow{
       bottom: 30px;
@@ -839,9 +749,6 @@
       padding: 80px 0;
       max-width: 100%;
     }
-    .title::after {
-      right: 30%;
-    }
   }
 
   .slick-arrow {
@@ -858,9 +765,6 @@
 
   .services {
     padding: 80px 0;
-    .title::after {
-      right: 35%;
-    }
     &__text {
       margin-bottom: 50px;
     }
@@ -874,17 +778,11 @@
     &__content {
       padding: 80px 0;
     }
-    .title::after {
-      right: 23%;
-    }
   }
   ul.presintation__list{
     margin-bottom: 55px;
   }
-  .presintation {
-    .title::after {
-      right: 12%;
-    }
+
     &__item {
       margin-bottom: 25px;
       padding-left: 35px;
@@ -906,8 +804,8 @@
   }
 
   .cases {
-    .title::after {
-      right: -2%;
+    .title span {
+      margin-left: 3px;
     }
     &__inner {
       padding-top: 80px;
@@ -921,9 +819,6 @@
     padding: 80px 0;
     background-size: contain;
     background-position: right 20%;
-    .title::after {
-      right: 9%;
-    }
   }
   .news{
     &__small-link {
@@ -941,10 +836,6 @@
   }
 
   .newsletter{
-    background-position: 65%;
-    .title::after {
-      right: 62%;
-    }
     &__inner {
       padding: 80px 0;
     }
@@ -987,28 +878,10 @@
       font-size: 14px;
     }
   }
-}
+
+
 
 @media (max-width:390px){
-  .top .title::after {
-    right: 35%;
-  }
-  .about .title::after {
-    right: 26%;
-  }
-  .services .title::after {
-    right: 31%;
-  }
-  .consultation .title::after {
-    right: 19%;
-    bottom: 8px;
-  }
-  .presintation .title::after {
-    right: 7%;
-  }
-  .cases .title::after {
-    right: 59%;
-  }
   .news{
     &__top{
     display: block;
@@ -1022,13 +895,6 @@
       }
     }
   }
-  .posts .title::after {
-    right: 3%;
-  }
-  .newsletter .title::after {
-    right: 60%;
-  }
- 
 }
 
 @media (max-width:380px){
@@ -1037,8 +903,10 @@
       font-size: 35px;
       line-height: 40px;
     }
-    .title::after{
-      right: 51%;
+    .title span {
+      width: 10px;
+      height: 10px;
+      margin-left: -7px;
     }
     &__text {
       font-size: 15px;
@@ -1047,12 +915,6 @@
     }
   }
 
-  .about .title::after {
-    right: 23%;
-  }
-  .services .title::after {
-    right: 28%;
-  }
   .services-slider__icon {
     width: 55%;
   }
@@ -1069,34 +931,17 @@
       margin: 0 auto 20px;
     }
   }
-  .consultation .title::after {
-    right: 15%;
-  }
-
-  .presintation .title::after {
-    right: 3%;
-  }
-  .cases .title::after {
-    right: 57%;
-  }
-  .posts .title::after {
-    right: 0%;
-  }
-
-  .newsletter .title::after {
-    right: 58%;
-  }
 }
 
 
 @media (max-width:340px){
+  .top .title span {
+    width: 8px;
+    height: 8px;
+  }
   .about{
     &__title {
       margin-bottom: 15px;
-    }
-    .title::after {
-      right: 47%;
-      bottom: 8px;
     }
     &__descr {
       margin-bottom: 10px;
@@ -1115,11 +960,11 @@
 
   .services{
     padding: 60px 0;
-    .title::after {
-      right: 0;
-    }
     &__title {
       margin-bottom: 15px;
+    }
+    .title span {
+      margin-left: 0px;
     }
     &__text{
       font-size: 16px;
@@ -1137,10 +982,6 @@
     &__title {
       margin-bottom: 15px;
     }
-    .title::after {
-      right: 27%;
-      bottom: 7px;
-    }
     &__text {
       margin-bottom: 25px;
       font-size: 16px;
@@ -1156,10 +997,6 @@
     }
     &__title {
       margin-bottom: 15px;
-    }
-    .title::after {
-      right: 16%;
-      bottom: 8px;
     }
     &__item {
       margin-bottom: 15px;
@@ -1206,9 +1043,6 @@
     &__title {
       margin-bottom: 15px;
     }
-    .title::after {
-      right: 3%;
-    }
     ul.cases__list {
       margin-bottom: 60px;
     }
@@ -1220,9 +1054,6 @@
 
   .posts{
     padding: 60px 0;
-    .title::after {
-      right: 13%;
-    }
     &__text{
       font-size: 15px;
     }
@@ -1261,9 +1092,6 @@
     }
     &__title {
       margin-bottom: 15px;
-    }
-    .title::after {
-      right: 63%;
     }
     &__text {
       font-size: 16px;
@@ -1327,15 +1155,6 @@
     &__link{
       line-height: 20px;
       font-size: 14px;
-    }
-  }
-}
-
-
-@media (max-width:320px){
-  .top{
-    .title::after{
-      right: 43%;
     }
   }
 }

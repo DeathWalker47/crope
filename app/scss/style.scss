@@ -125,9 +125,10 @@
     margin-bottom: 50px;
     @extend %poppins-700;
   }
-  .title::after{
+  .title span {
     width: 20px;
     height: 20px;
+    margin-left: -30px;
   }
   &__text{
     font-size: 22px;
@@ -309,9 +310,6 @@
   &__title{
     margin-bottom: 40px;
   }
-  .title::after{
-    right: 29%;
-  }
   &__descr{
     margin-bottom: 32px;
     font-size: 22px;
@@ -339,9 +337,8 @@
   &__title{
     margin-bottom: 40px;
   }
-  .title::after {
-    right: 0%;
-    bottom: 8px;
+  .title span {
+    margin-left: 1px;
   }
   &__text{
     margin-bottom: 70px;
@@ -566,9 +563,7 @@
   &__title{
     margin-bottom: 40px;
   }
-  .title::after{
-    right: 9%;
-  }
+ 
   &__text{
     margin-bottom: 50px;
     font-size: 22px;
@@ -619,9 +614,6 @@
   }
   &__title{
     margin-bottom: 40px;
-  }
-  .title::after{
-    right: 0%;
   }
   &__text{
     max-width: 550px;
@@ -736,9 +728,6 @@
   }
   &__title{
     margin-bottom: 40px;
-  }
-  .title::after{
-    right: 11%;
   }
 }
 
@@ -864,9 +853,6 @@
   &__title{
     margin-bottom: 40px;
     max-width: 360px;
-  }
-  .title::after{
-    right: 21%;
   }
   &__text{
     max-width: 450px;

@@ -107,7 +107,7 @@ body{
   text-transform: capitalize;
   color: $white;
   position: relative;
-  &::after{
+  /* &::after{
     content: '';
     position: absolute;
     right: 24%;
@@ -116,6 +116,14 @@ body{
     height: 12px;
     background-color: $accent;
     border-radius: 50%;
+  } */
+  span{
+    width: 12px;
+    height: 12px;
+    background-color: $accent;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
   }
 }
 
@@ -266,7 +274,7 @@ body{
 
 @media (max-width:540px){
   .title {
-    font-size: 46px;
+    font-size: 45px;
     line-height: 50px;
     &::after {
       bottom: 10px;
@@ -277,6 +285,10 @@ body{
 }
 
 @media (max-width:440px){
+  .title span {
+    width: 10px;
+    height: 10px;
+  }
   .breadcrumbs {
     top: 100px;
     right: 15px;
@@ -347,9 +359,10 @@ body{
   .title {
     font-size: 33px;
     line-height: 40px;
-    &::after{
-      width: 6px;
-      height: 6px;
+    span {
+      width: 8px;
+      height: 8px;
+      margin-left: 3px;
     }
   }
   .input,

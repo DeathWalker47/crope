@@ -4,9 +4,6 @@
   background-repeat: no-repeat;
   background-position: right 90%;
   background-color: $bg;
-  .number{
-    top: 290px;
-  }
   &__content{
     padding: 270px 0;
   }
@@ -19,8 +16,13 @@
   &__title{
     margin-bottom: 40px;
   }
-  .title::after{
-    right: 28%;
+  .title span {
+    width: 12px;
+    height: 12px;
+    background-color: #DD4242;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: -12px;
   }
   &__text{
     max-width: 540px;

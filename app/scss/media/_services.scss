@@ -1,0 +1,159 @@
+@media (max-width:1080px){
+  .price__content {
+    padding: 120px 0;
+  }
+  .price__top {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width:880px){
+  .our-services{
+    &__content-top {
+      margin-bottom: 40px;
+      max-width: 570px;
+    }
+    &__title {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (max-width:760px){
+  .price-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    &__item{
+      margin-bottom: 45px;
+    }
+  }
+}
+
+@media /* (min-width: 550px) and  */(max-width: 570px) and (orientation: landscape){
+  .our-services__content {
+    padding: 200px 0;
+  }
+}
+
+
+@media (max-width:540px){
+  .our-services__subtitle {
+    margin-bottom: 10px;
+  }
+  .price{
+    &__subtitle {
+      margin-bottom: 10px;
+    }
+    &__title{
+      margin-bottom: 25px;
+    }
+  }
+  .price-list{
+    &__item-top {
+      padding: 25px 15px 20px;
+    }
+    &__item{
+      margin-bottom: 30px;
+      &:hover {
+        transform: translateY(0px);
+      }
+    }
+    &__item-rate {
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 10px;
+    }
+    &__item-number {
+      font-size: 50px;
+      margin-bottom: 10px;
+      sup {
+        font-size: 20px;
+      }
+    }
+    &__item-month{
+      font-size: 16px;
+    }
+    &__services-box {
+      padding: 25px 20px ;
+    }
+    &__services{
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (max-width:440px){
+  .our-services{
+    &__content {
+      padding-top: 160px;
+      padding-bottom: 80px;
+    }
+  }
+  .price__content {
+    padding: 80px 0;
+  }
+}
+
+
+@media (max-width:340px){
+  .our-services{
+    &__content{
+      padding-bottom: 60px;
+    }
+    &__title {
+      margin-bottom: 15px;
+    }
+    .title span {
+      width: 8px;
+      height: 8px;
+      margin-left: -6px;
+    }
+    &__text{
+      font-size: 16px;
+    }
+    &__content-top{
+      margin-bottom: 25px;
+    }
+  }
+  .price{
+    &__title {
+      margin-bottom: 15px;
+    }
+    &__text{
+      font-size: 16px;
+    }
+    &__top {
+      margin-bottom: 25px;
+    }
+  }
+  .price-list{
+    &__item {
+      margin-bottom: 20px;
+    }
+    &__item-top {
+      padding: 25px 15px 15px;
+    }
+    &__item-rate {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 5px;
+    }
+    &__item-number {
+      font-size: 44px;
+      margin-bottom: 6px;
+      sup {
+        font-size: 18px;
+      }
+    }
+    &__services-box {
+      padding: 20px 20px;
+    }
+    &__item-month {
+      font-size: 14px;
+    }
+  }
+}
+
+
+

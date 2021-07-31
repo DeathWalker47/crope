@@ -9,14 +9,7 @@
 }
 
 @media /* (min-width: 550px) and  */(max-width: 900px) and (orientation: landscape){
-  .about-us .title::after {
-    right: 12%;
-    bottom: 11px;
-  }
-  .team .title::after {
-    right: 9%;
-    bottom: 12px;
-  }
+  
   .video__popup {
     min-height: 200px;
     }
@@ -69,12 +62,6 @@
     &__content {
       padding: 165px 0 100px;
     }
-    .title::after {
-      right: 27%;
-    }
-  }
-  .team .title::after {
-    right: 13%;
   }
 }
 
@@ -90,10 +77,6 @@
     &__circle {
       width: 250px;
       padding: 70px 10px;
-    }
-    .title::after {
-      right: 43%;
-      bottom: 8px;
     }
     &__num {
       font-size: 70px;
@@ -113,9 +96,7 @@
     &__title {
       margin-bottom: 25px;
     }
-    .title::after {
-      right: 35%;
-    }
+   
   }
   .video__popup {
     min-height: 350px;
@@ -127,9 +108,7 @@
     &__content {
       padding: 160px 0 35px;
     }
-    .title::after {
-      right: 12%;
-    }
+  
     &__circle-box {
       margin: 0 auto 30px;
     }
@@ -153,9 +132,6 @@
 
   .team {
     padding: 80px 0;
-    .title::after {
-      right: 17%;
-    } 
     &__text {
       margin-bottom: 40px;
     }
@@ -203,29 +179,11 @@
 }
 
 @media (max-width: 390px){
-  .about-us .title::after {
-    right: 7%;
-  }
-
-  .team .title::after {
-    right: 11%;
-    bottom: 8px;
-  }
   .team .slick-arrow {
     top: -20px;
   }
- 
 }
 
-
-@media (max-width: 380px){
-  .about-us .title::after {
-    right: 16%;
-  }
-  .team .title::after {
-    right: 7%;
-  }
-  }
 @media (max-width: 340px){
   .about-us{
     &__content {
@@ -268,9 +226,6 @@
     padding: 60px 0;
     &__title {
       margin-bottom: 15px;
-    }
-    .title::after {
-      right: 20%;
     }
     &__text {
       font-size: 16px;
