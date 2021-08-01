@@ -43,7 +43,7 @@ $bg-block: #090b13;
   @extend %mulish-400;
   transition: all .3s linear;
   overflow: hidden;
-  z-index: 3;
+  z-index: 2;
   position: relative;
   &:after {
     background: #fff;

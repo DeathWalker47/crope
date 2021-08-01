@@ -44,6 +44,9 @@
 
   }
 }
+.logo{
+  z-index: 5;
+}
 .nav{
   &__btn{
     padding: 0;
@@ -60,6 +63,7 @@
       background-color: $accent;
       left: 0;
       bottom: 6px;
+      transition: all .5s linear;
     }
     &::after{
       position: absolute;
@@ -69,6 +73,7 @@
       background-color: $accent;
       left: 0;
       top: 6px;
+      transition: all .5s linear;
     }
   }
   &__btn-line{
@@ -76,13 +81,22 @@
     width: 30px;
     height: 2px;
     background-color: $accent;
+    transition:  opacity .4s linear;
   }
 }
 .menu{
   display: flex;
   margin-left: 30px;
+  transition: all .5s linear;
+  
   &__item{
     margin-left: 60px;
+    &--home{
+      display: none;
+    }
+    &--form{
+      display: none;
+    }
   }
   &__item-link{
     color: $white;
@@ -97,11 +111,14 @@
   &__item-link--active{
     color: $accent;
   }
-  /* .error-404{
+  &__item--sociallink{
     display: none;
-  } */
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 21px;
+    color: $default;
+  }
 }
-
 
 .top{
   background-color: $bg;
@@ -199,7 +216,7 @@
   .slick-prev{
     width: 80px;
     right: 170px;
-    z-index: 3;
+    z-index: 2;
     text-align-last: left;
   }
   .slick-next{
@@ -371,7 +388,7 @@
 
 .slick-prev{
   width: 80px;
-  z-index: 3;
+  z-index: 2;
   right: 514px;
   text-align-last: left;
 }

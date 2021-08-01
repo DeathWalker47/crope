@@ -1,4 +1,9 @@
 $(function(){
+
+  $('.nav__btn').on('click', function(){
+    $('.nav__btn').toggleClass('nav__btn--active');
+    $('.menu').toggleClass('menu--active');
+  });
   
   $('.top-slider').slick({
     dots: true,

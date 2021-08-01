@@ -3,6 +3,7 @@
 @import './media/cases';
 @import './media/blog';
 @import './media/portfolio';
+@import './media/contact';
 
 
 
@@ -319,14 +320,78 @@
 }
 
 @media (max-width:880px){
-  .menu{
-    display: none;
+  ul.menu{
+    height: 100vh;
+    overflow: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(-400%);
+    background-color: #080A12;
+    &--active{
+      transform: translateY(0%);
+      padding-top: 80px;
+      padding-bottom: 50px;
+      .menu__item {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+        &:last-child{
+          margin-top: auto;
+          span{
+            width: 6px;
+            height: 6px;
+            display: inline-block;
+            border-radius: 50%;
+            background-color: $accent;
+            margin: 0 27px;
+          }
+        }
+        &--home{
+          display: block;
+        }
+        &--form{
+          display: block;
+        }
+      }
+      .menu__item-link {
+        font-size: 22px;
+        line-height: 28px;
+        color: $default;
+        opacity: .3;
+       
+        &--active{
+          color: $white;
+          opacity: 1;
+        }
+      }
+      .menu__item--sociallink{
+        display: inline-block;
+      }
+    }
   } 
   .nav{
     order: 1;
     margin-left: 25px;
     &__btn{
       display: block;
+      z-index: 1;
+      &--active{
+        .nav__btn-line{
+          opacity: 0;
+          transition:  opacity .1s linear;
+        }
+        &::before{
+         transform: translateY(5px) rotate(-135deg); 
+        }
+        &::after{
+          transform: translateY(-8px) rotate(135deg);   
+        }
+      }
     }
   }
   .top-slider__bg {
@@ -467,6 +532,9 @@
 }
 
 @media (max-width:640px){
+  ul.menu--active {
+    padding-top: 120px;
+  }
   .slick-dots {
     right: 40px;
   }
@@ -511,6 +579,18 @@
 }
 
 @media (max-width:540px){
+  ul.menu--active {
+    padding-top: 120px;
+    .menu__item {
+      margin-bottom: 25px;
+    }
+    .menu__item-link {
+      font-size: 20px;
+      line-height: 26px;
+      display: block;
+      width: 100%;
+    }
+  }
   .slick-dots {
     right: 20px;
   }
@@ -849,6 +929,7 @@
   }
 
   .newsletter{
+    background-position: 80%;
     &__inner {
       padding: 80px 0;
     }
@@ -917,8 +998,8 @@
       line-height: 40px;
     }
     .title span {
-      width: 10px;
-      height: 10px;
+      width: 8px;
+      height: 8px;
       margin-left: -7px;
     }
     &__text {
@@ -948,6 +1029,16 @@
 
 
 @media (max-width:340px){
+  ul.menu--active {
+    padding-top: 100px;
+    .menu__item {
+      margin-bottom: 18px;
+    }
+    .menu__item-link {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
   .top .title span {
     width: 8px;
     height: 8px;
