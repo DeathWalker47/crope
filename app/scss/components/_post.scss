@@ -4,9 +4,6 @@
   background-repeat:repeat-y;
   background-position: right 40%;
   background-size: auto;
-  .number{
-    top: 290px;
-  }
   &__content{
     padding: 270px 0 140px;
   }
@@ -210,7 +207,7 @@
     font-size: 40px;
     line-height: 52px;
     @extend %poppins-500;
-    color: $default;
+    color: $white;
     margin-bottom: 20px;
   }
   &__text{
@@ -322,6 +319,9 @@
     width: 260px;
     margin-right: 35px;
     width: 320px;
+    &:last-child{
+      margin-right: 0;
+    }
   }
   &__textarea{
     margin-bottom: 50px;
