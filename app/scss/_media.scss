@@ -22,6 +22,11 @@
     }
   }
   .top{
+    .title span {
+      width: 20px;
+      height: 20px;
+      margin-left: -20px;
+    }
     &__content{
       left: 10%;
     }
@@ -41,10 +46,23 @@
 }
 
 @media (max-width:1366px){
-  .top .title span {
-    width: 15px;
-    height: 15px;
-    margin-left: -20px;
+  .top{
+    &__content{
+      top: 57%;
+    }
+    &__title {
+      font-size: 80px;
+      line-height: 80px;
+      margin-bottom: 25px;
+    }
+    &__text {
+      margin-bottom: 60px;
+    }
+    .title span {
+      width: 15px;
+      height: 15px;
+      margin-left: -20px;
+    }
   }
   .newsletter::before {
     right: 40%;
@@ -869,8 +887,13 @@
     }
   }
 
-  .presintation__inner{
-    padding: 80px 0;
+  .presintation{
+    &__inner{
+      padding: 80px 0;
+    }
+    &__info-item:nth-child(odd) {
+      background: linear-gradient(180deg, #080A12 0%, rgba(8, 10, 18, 0) 100%);
+    }
   }
   ul.presintation__list{
     margin-bottom: 55px;
@@ -890,9 +913,7 @@
       padding: 50px 20px;
       margin-bottom: 15px;
     }
-    &__info-item:nth-child(odd) {
-      background: linear-gradient(180deg, #080A12 0%, rgba(8, 10, 18, 0) 100%);
-    }
+    
   }
 
   .cases {
@@ -936,7 +957,7 @@
   .newsletter{
     background-position: 80%;
     &__inner {
-      padding: 80px 0;
+      padding: 80px 0 60px;
     }
     &__text {
       margin-bottom: 30px;
@@ -949,7 +970,7 @@
     margin-bottom: 5px;
   }
   .quote__signa {
-    margin-left: auto;
+    display: none;
   }
 
   .footer{
@@ -1036,6 +1057,16 @@
   }
 }
 
+@media (max-width:360px){
+  .services{
+    .title {
+      font-size: 37px;
+      span {
+        margin-left: 3px;
+      }
+    }
+  }
+}
 
 @media (max-width:340px){
   ul.menu--active {
@@ -1075,9 +1106,6 @@
     padding: 60px 0;
     &__title {
       margin-bottom: 15px;
-    }
-    .title span {
-      margin-left: 0px;
     }
     &__text{
       font-size: 16px;

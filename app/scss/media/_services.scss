@@ -7,6 +7,13 @@
   }
 }
 
+@media /* (min-width: 550px) and  */(max-width: 900px) and (orientation: landscape){
+  .our-services__content {
+    padding: 270px 0 80px;
+  }
+}
+
+
 @media (max-width:880px){
   .our-services{
     &__content-top {
