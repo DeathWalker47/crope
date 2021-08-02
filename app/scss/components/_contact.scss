@@ -64,13 +64,13 @@
       background-repeat: no-repeat;
     }
     &--world::before{
-      background-image: url('../../images/decor/world.svg');
+      background-image: url('../images/decor/world.svg');
     }
     &--message::before{
-      background-image: url('../../images/decor/message.svg');
+      background-image: url('../images/decor/message.svg');
     }
     &--clock::before{
-      background-image: url('../../images/decor/clock.svg');
+      background-image: url('../images/decor/clock.svg');
     }
   }
 }

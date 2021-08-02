@@ -1,7 +1,7 @@
 .case-work{
   padding: 270px 0 140px;
   background-color: $bg-tree;
-  background-image: url('../../images/about-one.png');
+  background-image: url('../images/about-one.png');
   background-repeat: no-repeat;
   background-size: auto;
   background-position: right 70%;
@@ -128,7 +128,7 @@
       left: 0;
       top: 50%;
       transform: translateY(-50%);
-      background-image: url('../../images/decor/share.svg');
+      background-image: url('../images/decor/share.svg');
     }
   }
 }
