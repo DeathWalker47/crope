@@ -1,6 +1,7 @@
 $(function(){
 
   $('.nav__btn').on('click', function(){
+    $('body').toggleClass('hidden');
     $('.nav__btn').toggleClass('nav__btn--active');
     $('.menu').toggleClass('menu--active');
   });
@@ -16,14 +17,6 @@ $(function(){
     autoplay: true,
     autoplaySpeed: 4000,
     prevArrow: '<button type="button" class="slick-prev">Prev</button>',
-    /* responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          dots: false,
-        }
-      }
-    ] */
   });
 
   $('.services-slider').slick({

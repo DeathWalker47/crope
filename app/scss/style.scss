@@ -12,6 +12,7 @@
 @import './components/post';
 @import './components/contact';
 
+
 .header{
   position: absolute;
   top: 0;
@@ -226,13 +227,9 @@
   }
 }
 
+
 .top-slider{
   position: relative;
- /*  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0; */
 }
 .top-slider__bg{
   position: relative;
@@ -272,6 +269,7 @@
     width: 30px;
     height: 10px;
     border-radius: 5px;
+    cursor: pointer;
     font-size: 0;
     border: none;
   }
